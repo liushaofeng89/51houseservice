@@ -1,1081 +1,623 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-<meta charset="utf-8">
-<title>首页 - 51HouseService</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="presence by Designova - Responsive HTML5 template">
-<meta name="author" content="liushaofeng">
-<!-- Standard Favicon--> 
-<link rel="shortcut icon" href="resource/images/favicon.ico">
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta character set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>51HouseService</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="Blue One Page Creative HTML5 Template">
+        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+        <meta name="author" content="Muhammad Morshed">
+		
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/animate.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
 
-<!-- Standard iPhone Touch Icon--> 
-<link rel="apple-touch-icon" sizes="57x57" href="images/touchicons/apple-touch-icon-57-precomposed" />
-<!-- Retina iPhone Touch Icon--> 
-<link rel="apple-touch-icon" sizes="114x114" href="assets/touchicons/apple-touch-icon-114-precomposed" />
-<!-- Standard iPad Touch Icon--> 
-<link rel="apple-touch-icon" sizes="72x72" href="assets/touchicons/apple-touch-icon-72-precomposed" />
-<!-- Retina iPad Touch Icon--> 
-<link rel="apple-touch-icon" sizes="144x144" href="assets/touchicons/apple-touch-icon-144-precomposed" />
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+	</head>
+	
+    <body id="body">
 
-<!-- Bootstrap CSS Files -->
-<link href="resource/bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="resource/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
-<!-- Custom Fonts Setup via Font-face CSS3 -->
-<link href="resource/fonts/fonts.css" rel="stylesheet">
-<!-- CSS files for plugins -->
-<link href="resource/stylesheets/pace.preloader.css" rel="stylesheet">
-<link href="resource/stylesheets/animate.css" rel="stylesheet">
-<link href="resource/stylesheets/parallax.css" rel="stylesheet">
-<link href="resource/stylesheets/owl.carousel.css" rel="stylesheet">
-<link href="resource/stylesheets/owl.theme.css" rel="stylesheet">
-<link href="resource/stylesheets/magnific-popup.css" rel="stylesheet" > 
-<link href="resource/stylesheets/jquery.tweet.css" rel="stylesheet"/>
-<link href="resource/stylesheets/foliohover.css" rel="stylesheet">
-<link href="resource/stylesheets/fancymenu.css"  rel="stylesheet">
-<link href="resource/stylesheets/intro.css" rel="stylesheet">
-
-<!-- Main Template Styles -->
-<link href="resource/stylesheets/main.css" rel="stylesheet">
-<!-- Main Template Responsive Styles -->
-<link href="resource/stylesheets/main-responsive.css" rel="stylesheet">
-<!-- Main Template Retina Optimizaton Rules -->
-<link href="resource/stylesheets/main-retina.css" rel="stylesheet">
-<!-- LESS stylesheet for managing color presets -->
-<link href="resource/less/color-cyan.less" rel="less" type="text/css">
-<!-- LESS JS engine-->
-<script src="resource/less/less-1.5.0.min.js"></script>
-<script src="resource/javascripts/modernizr.custom.js"></script>
-
- <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="resource/bootstrap/js/html5shiv.js"></script>
-      <script src="resource/bootstrap/js/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-
-<body>
-
-<div class="overlay overlay-hugeinc">
-			<button type="button" class="overlay-close">Close</button>
-			<nav>
-				<ul>
-					<li><a class="fancy-nav-close scroll" href="#slide1"><span>首页</span></a></li>
-					<li><a class="fancy-nav-close scroll" href="#slide2"><span>客户</span></a></li>
-					<li><a class="fancy-nav-close scroll" href="#about"><span>关于</span></a></li>
-					<li><a class="fancy-nav-close scroll" href="#services"><span>服务</span></a></li>
-					<li><a class="fancy-nav-close scroll" href="#news"><span>新闻</span></a></li>
-					<li><a class="fancy-nav-close scroll" href="#portfolio"><span>Portfolio</span></a></li>
-					<li><a class="fancy-nav-close scroll" href="#contact"><span>联系我们</span></a></li>
-					<li><a href="single-project.html"><span>Single Project</span></a></li>
-					<li><a href="single-post.html"><span>Single News Post</span></a></li>
-				</ul>
-			</nav>
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
 		</div>
+		<!-- end preloader -->
 
-
-<div class="static-side-navigation-wrap grey-bg">
-				<p><button id="trigger-overlay" type="button"></button></p>
-	<ul class="navigation">
-		<li data-slide="1" ></li>
-		<li data-slide="2"></li>
-		<li data-slide="3"></li>
-		<li data-slide="4"></li>
-	</ul>
-	<div class="vertical-logo">
-		<a href="#"><img title="51housesevice" alt="51housesevice" src="resource/images/vertical-logo.png"/></a>
-	</div>
-
-</div>
-
-
-
-<div class="copyrights">Collect from <a href="#" >免费模板</a></div>
-
-	<div class="slide intro intro-with-sidenav text-center" id="slide1">
-
-
-				<article class="promo-area promo-area-color">
-					<div id="intro-carousel" class="intro-carousel owl-carousel owl-nav-sticky-wide">
-
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
 					
+					<!-- logo -->
+					<h1 class="navbar-brand">
+						<a href="#body">Blue</a>
+					</h1>
+					<!-- /logo -->
+                </div>
 
-						<div class="item intro-slide-bg-one">
-							
-							<div class="vertical-center emblem-area-wrap emblem-in-showcase">
-								<div class="row">
-									<article  class="col-md-12">
-											<a href="#" class="btn btn-presence btn-presence-white presence-ease">注册服务</a>
-											<a href="#" class="btn btn-presence btn-presence-white presence-ease">我要服务</a>
-									</article>
-								</div>
-							</div>
-							
-						</div>
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a href="#body">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#testimonials">Testimonial</a></li>
+                        <li><a href="#price">price</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<main class="site-content" role="main">
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="home-slider">
+            <div id="slider" class="sl-slider-wrapper">
 
+				<div class="sl-slider">
+				
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 
-						<div class="item intro-slide-bg-two">
-							<div class="intro-mask-white">
-								<div class="shoutout-area vertical-center">
-									<h1 class="dark">"When things are being designed differently, a beautiful website is born with love!"</h1>
-									<h6><span class="dark">John Doe</span></h6>
-									<p>Founder of Minimalism</p>
-								</div>
-							</div>
-						</div>
+						<div class="bg-img bg-img-1"></div>
 
-						<div class="item intro-slide-bg-three">
-							<div class="intro-mask-dark">
-								<div class="shoutout-area vertical-center">
-									<h1 class="white">"Perfection is generated from hardwork that is driven by ultimate passion"</h1>
-									<h6><span class="white">Sarah Albenov</span></h6>
-									<p>Founder of Usability</p>
-								</div>
-							</div>
-						</div>
+						<div class="slide-caption">
+                            <div class="caption-content">
+                                <h2 class="animated fadeInDown">BLUE Onepage HTML5 Template</h2>
+                                <span class="animated fadeInDown">Clean and Professional one page Template</span>
+                                <a href="#" class="btn btn-blue btn-effect">Join US</a>
+                            </div>
+                        </div>
+						
+					</div>
+					
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+					
+						<div class="bg-img bg-img-2"></div>
+						<div class="slide-caption">
+                            <div class="caption-content">
+                                <h2>BLUE Onepage HTML5 Template</h2>
+                                <span>Clean and Professional one page Template</span>
+                                <a href="#" class="btn btn-blue btn-effect">Join US</a>
+                            </div>
+                        </div>
+						
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						
+						<div class="bg-img bg-img-3"></div>
+						<div class="slide-caption">
+                            <div class="caption-content">
+                                <h2>BLUE Onepage HTML5 Template</h2>
+                                <span>Clean and Professional one page Template</span>
+                                <a href="#" class="btn btn-blue btn-effect">Join US</a>
+                            </div>
+                        </div>
 
 					</div>
-						
-				</article>
 
-	
-	</div>
-	<!--End Slide 1-->
+				</div><!-- /sl-slider -->
 
+                <!-- 
+                <nav id="nav-arrows" class="nav-arrows">
+                    <span class="nav-arrow-prev">Previous</span>
+                    <span class="nav-arrow-next">Next</span>
+                </nav>
+                -->
+                
+                <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                    <a href="javascript:;" class="sl-prev">
+                        <i class="fa fa-angle-left fa-3x"></i>
+                    </a>
+                    <a href="javascript:;" class="sl-next">
+                        <i class="fa fa-angle-right fa-3x"></i>
+                    </a>
+                </nav>
+                
 
-	<div class="slide parallax-layer text-center" id="slide2" data-slide="2">
+				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+				</nav>
 
-		<div class="vertical-center emblem-area-wrap emblem-in-showcase">
-			<a href="single-project.html">
-				<div class="emblem-area wow slideInLeft">
-					<img alt="51houseservice" src="resource/images/logo_white.png" width="160px;">
-				</div>
-			</a>
-		</div>
-		
-	</div>
-	<!--End Slide 2-->
-
-
-	<div class="slide video-layer text-center" id="slide3" data-slide="3">
-
-		<div id="video-container-01" class="video-container">
-			<video autoplay loop muted>
-				<source src="resource/videos/01.mp4" type="video/mp4">
-				<source src="resource/videos/01.webm" type="video/webm">
-				<source src="resource/videos/01.ogg" type="video/ogg">
-			</video>
-
-			<div class="video-overlay-content horizontal-center">
+			</div><!-- /slider-wrapper -->
+		</section>
 			
-				<div class="vertical-center emblem-area-wrap emblem-in-showcase">
-					<a href="single-project.html">
-						<div class="emblem-area wow slideInRight">
-							<h3 class="dark">Startup Video Trailor</h3>
-							<h6><span class="dark">Motion Graphics</span></h6>
+		<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >��ҳģ��</a></div>
+
+
+		<!-- Service section -->
+		<section id="service">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center">
+						<h2 class="wow animated bounceInLeft">Service</h2>
+						<p class="wow animated bounceInRight">The Key Features of our Job</p>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-home fa-3x"></i>
+							</div>
+							<h3>Support</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
 						</div>
-					</a>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-tasks fa-3x"></i>
+							</div>
+							<h3>Well Documented</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-clock-o fa-3x"></i>
+							</div>
+							<h3>Design UI/UX</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						</div>
+					</div>
+				
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-heart fa-3x"></i>
+							</div>
+							
+							<h3>Web Security</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>							
+						</div>
+					</div>
+					
 				</div>
-			
 			</div>
-		</div>
+		</section>
+		<!-- end Service section -->
 		
+		<!-- portfolio section -->
+		<section id="portfolio">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center wow animated fadeInDown">
+						<h2>FEATURED PROJECTS</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					
 
-	</div>
-	<!--End Slide 3-->
-
-
-    	<div class="slide parallax-layer text-center" id="slide4" data-slide="4" >
-
-		<div class="vertical-center emblem-area-wrap emblem-in-showcase">
-			<a href="single-project.html">
-				<div class="emblem-area wow slideInLeft">
-					<h3 class="dark">Photo Share Mobile App</h3>
-					<h6><span class="dark">App Development</span></h6>
-				</div>
-			</a>
-		</div>
-
-
-    	</div>
-    	<!--End Slide 4-->
-
-
-<!--Mast-wrap : starts-->
-<section class="mast-wrap overlay-close">
-	
-
-
-<section class="call-to-action custom-bg-cyan ">
-
-<div class="container">
-
-	<div id="stats-carousel" class="stats-carousel owl-carousel owl-nav-sticky-wide">
-
-			<div class="item stats-carousel-item">
-					<div class="row stats-wrap">
-
-						<article  class="col-md-4 stats-block wow slideInLeft">
-							<img title="51housesevice" alt="51housesevice" src="resource/images/stats/01.png"/>
-							<h2 class="stats-count">2310</h2>
-							<p class="stats-des"><span>Premium Users</span></p>
-						</article>
-						<article  class="col-md-4 stats-block wow slideInDown">
-							<img title="51housesevice" alt="51housesevice" src="resource/images/stats/02.png"/>
-							<h2 class="stats-count">946K</h2>
-							<p class="stats-des"><span>Lines of Code</span></p>
-						</article>
-						<article  class="col-md-4 stats-block wow slideInRight">
-							<img title="51housesevice" alt="51housesevice" src="resource/images/stats/03.png"/>
-							<h2 class="stats-count">122M</h2>
-							<p class="stats-des"><span>Products Sold</span></p>
-						</article>
+					<ul class="project-wrapper wow animated fadeInUp">
+						<li class="portfolio-item">
+							<img src="img/portfolio/item.jpg" class="img-responsive" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat">
+							<figcaption class="mask">
+								<h3>Wall street</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Araund The world" data-fancybox-group="works" href="img/portfolio/item.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
 						
-					</div>			
+						<li class="portfolio-item">
+							<img src="img/portfolio/item2.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+							<figcaption class="mask">
+								<h3>Wall street</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Wall street" href="img/slider/banner.jpg" data-fancybox-group="works" ><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+						
+						<li class="portfolio-item">
+							<img src="img/portfolio/item3.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+							<figcaption class="mask">
+								<h3>Wall street</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Behind The world" data-fancybox-group="works" href="img/portfolio/item3.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+						
+						<li class="portfolio-item">
+							<img src="img/portfolio/item4.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry.">
+							<figcaption class="mask">
+								<h3>Wall street</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Wall street 4" data-fancybox-group="works" href="img/portfolio/item4.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+						
+						<li class="portfolio-item">
+							<img src="img/portfolio/item5.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+							<figcaption class="mask">
+								<h3>Wall street</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Wall street 5" data-fancybox-group="works" href="img/portfolio/item5.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+						
+						<li class="portfolio-item">
+							<img src="img/portfolio/item6.jpg" class="img-responsive" alt="Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. ">
+							<figcaption class="mask">
+								<h3>Wall street</h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting ndustry. </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Wall street 6" data-fancybox-group="works" href="img/portfolio/item6.jpg"><i class="fa fa-search"></i></a></li>
+								<li><a href=""><i class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+					</ul>
+					
+				</div>
 			</div>
-			<!-- item:ends -->
-
-
-			<div class="item stats-carousel-item">
+		</section>
+		<!-- end portfolio section -->
+		
+		<!-- Testimonial section -->
+		<section id="testimonials" class="parallax">
+			<div class="overlay">
+				<div class="container">
 					<div class="row">
-
-						<article  class="col-md-12">
-							<h1 class="white"><span>Do you know?</span>We are focused to create a better experience on web and we are committed in maintaining it with geatest passion!</h1>
-								<div class="liner"><span class="dark-bg"></span></div>
-							<h4 class="dark">Okay, now you've seen some of our works, do you like them?</h4>
-							<div><a href="#" class="btn btn-presence btn-presence-white presence-ease">Yes, show me the whole portfolio</a></div>
-							
-						</article>
+					
+						<div class="sec-title text-center white wow animated fadeInDown">
+							<h2>What people say</h2>
+						</div>
 						
-					</div>	
-			</div>
-			<!-- item:ends -->
-	</div>
-
-		
-		
-	
-</div>
-		
-
-	
-		
-
-	
-</section>
-<!-- call-to-action : ends -->
-
-
-<!-- page-section : starts -->
-<section id="about" class="about page-section">
-	<section class="inner-section">
-
-		<section class="container">
-		
-			<div class="row">
-				<article class="col-md-12 text-center">
-
-					<h1 class="main-heading  wow bounceInUp">关于我们</h1>
-					<div class="liner"><span class="color-bg"></span></div>
+						<div id="testimonial" class=" wow animated fadeInUp">
+							<div class="testimonial-item text-center">
+								<img src="img/member-1.jpg" alt="Our Clients">
+								<div class="clearfix">
+									<span>Katty Flower</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								</div>
+							</div>
+							<div class="testimonial-item text-center">
+								<img src="img/member-1.jpg" alt="Our Clients">
+								<div class="clearfix">
+									<span>Katty Flower</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								</div>
+							</div>
+							<div class="testimonial-item text-center">
+								<img src="img/member-1.jpg" alt="Our Clients">
+								<div class="clearfix">
+									<span>Katty Flower</span>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+								</div>
+							</div>
+						</div>
 					
-					<p class="promo-text-main  wow slideInRight">We are an innovative design agency based on Serbia. We are experienced in designing websites, logos and identities. We love modern design principles and we really undergo that. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim turpis, bibendum eleifend leo vel, convallis imperdiet lacus. Cras id libero nec elit aliquam consequat ac id justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus pretium blandit.</p>
-					
-				</article>
+					</div>
+				</div>
 			</div>
-
 		</section>
-		<!-- container : ends -->
-			
-	</section>
-	<!-- inner-section : ends -->
-
-
-	<section class="inner-section add-top-half inner-bg about-inner-bg">
-
-
-		<div id="about-carousel" class="about-carousel owl-carousel owl-nav-sticky-wide">
-
-		<div class="item">
-
-			<section class="container">
-
-
-				<div class="row wow slideInDown">
-					<article class="col-md-6 text-left about-inner-content dark-low-bg equal-height-one">
-						<h3 class="white">Why we are special</h3>
-						<div class="liner-small-left"><span class="color-bg"></span></div>
-						<p>We are an innovative design agency based on Serbia. We are experienced in designing websites, logos and identities. We love modern design principles and we really undergo that.We are an innovative design agency based on Serbia. We are experienced in designing websites, logos and identities.</p>
-					</article>
-					<article class="col-md-6 text-left about-inner-content color-bg equal-height-one">
-						<a href="#" class="about-carousel-custom-next-trigger">
-							<h1 class="white">Explore Our Great Team</h1>
-							<div class="proceed-btn-wrap"><img title="51housesevice" alt="51housesevice" src="resource/images/proceed-white.png"/></div>
-						</a>
-					</article>
-				</div>
-
-			</section>
-			<!-- container : ends -->
-
-		</div>
-		<!-- item : ends -->
-
-
-		<div class="item">
-
-			<section class="container">
-
-				<div class="row">
-					<article class="col-md-3 text-left about-inner-content white-bg text-center equal-height-two">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/team/01.jpg"/>
-						<h3 class="dark">Ron</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor.</p>
-						
-					</article>
-					<article class="col-md-3 text-left about-inner-content dark-low-bg text-center equal-height-two">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/team/01.jpg"/>
-						<h3 class="white">Clara</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor.</p>
-						
-					</article>
-					<article class="col-md-3 text-left about-inner-content white-bg text-center equal-height-two">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/team/01.jpg"/>
-						<h3 class="dark">Lewis</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor.</p>
-						
-					</article>
-					<article class="col-md-3 text-left about-inner-content dark-low-bg text-center equal-height-two">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/team/01.jpg"/>
-						<h3 class="white">Fred</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor.</p>
-						
-					</article>
-				</div>
-
-				<div class="row">
-					<article class="col-md-3 text-left about-inner-content dark-low-bg text-center equal-height-two">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/team/01.jpg"/>
-						<h3 class="white">Agna</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor.</p>
-						
-					</article>
-					<article class="col-md-3 text-left about-inner-content white-bg text-center equal-height-two">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/team/01.jpg"/>
-						<h3 class="dark">Tim</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor.</p>
-						
-					</article>
-					<article class="col-md-6 text-left about-inner-content color-bg equal-height-two">
-						<a class="scroll" href="#testimonials">
-							<h1 class="white">What our clients say about us</h1>
-							<div class="line-top-button"><img title="51housesevice" alt="51housesevice" src="resource/images/proceed-white.png"/></div>
-						</a>
-					</article>
-				</div>
-
-			</section>
-			<!-- container : ends -->
-
-		</div>
-		<!-- item : ends -->
-		</div>
-		<!-- carousel : ends -->
-			
-	</section>
-	<!-- inner-section : ends -->
-
-	
-</section>
-<!-- page-section : ends -->
-
-
-
-
-
-<!-- page-section : starts -->
-<section id="testimonials" class="testimonials separator-section">
-	<section class="inner-section">
-
-		<section class="container">
+		<!-- end Testimonial section -->
 		
-			<div class="row">
-				<article class="col-md-12 text-center">
-
-
-					<div id="testimonials-carousel" class="testimonials-carousel owl-carousel owl-nav-sticky-wide">
-
-						<div class="item testimonial-block">
-								<div class="user-thumb"><img title="51housesevice" alt="51housesevice" src="resource/images/user.png"/></div>
-								<h3>"Presence is anmazing template. Easy to use, one page with parallax. I love the way Designova created this template, it is clean and simple."</h3>
-								<div class="liner-small-center"><span class="color-bg"></span></div>
-								<h5><span>Kelly Lovell</span></h5>
-								<p class="testimonial-brand"><span>Noname Interactive Agency</span></p>
-						</div>
-
-						<div class="item testimonial-block">
-								<div class="user-thumb"><img title="51housesevice" alt="51housesevice" src="resource/images/user.png"/></div>
-								<h3>"Have you ever searched for a parallax template seemlessly integrated into a single page? Presence from Designova will be the perfect answer!"</h3>
-								<div class="liner-small-center"><span class="color-bg"></span></div>
-								<h5><span>Deborah Sordano</span></h5>
-								<p class="testimonial-brand"><span>OneFourtyThree Club</span></p>
-						</div>
-
-						<div class="item testimonial-block">
-								<div class="user-thumb"><img title="51housesevice" alt="51housesevice" src="resource/images/user.png"/></div>
-								<h3>"Back in 2013, I loved their template Persona. Now I see Presence and I am fallen in love with it. No doubt, this template will rock on for sure."</h3>
-								<div class="liner-small-center"><span class="color-bg"></span></div>
-								<h5><span>Jake Southbridge</span></h5>
-								<p class="testimonial-brand"><span>Astonn Media Company</span></p>
-						</div>
-
+		<!-- Price section -->
+		<section id="price">
+			<div class="container">
+				<div class="row">
+				
+					<div class="sec-title text-center wow animated fadeInDown">
+						<h2>Price</h2>
+						<p>Our price for your company</p>
 					</div>
 					
-				</article>
-			</div>
-
-		</section>
-		<!-- container : ends -->
-			
-	</section>
-	<!-- inner-section : ends -->
-
-</section>
-
-
-
-<!-- featured-roller  -->
- <section id="featured" class="featured featured-roller text-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h3 class="white">总共解决问题：8300+次</h3>
-				<h5><span>Powered by Designova themes!</span></h5>
-				<img class="img-responsive wow fadeInUpBig" data-wow-offset="200" src="resource/images/featured.png" alt="51housesevice" title="51housesevice">
-                        		</div>
-		</div>
-	</div>
-</section>
-
-
-
-
-<!-- page-section : starts -->
-<section id="services" class="services page-section">
-
-	<section class="inner-section">
-
-		<section class="container">
-		
-			<div class="row">
-				<article class="col-md-12 text-center wow pulse">
-
-					<h1 class="main-heading">我们的服务</h1>
-					<div class="liner"><span class="color-bg"></span></div>
-					
-					<p class="promo-text">方便您的生活是我们最大的快乐……</p>
-					
-				</article>
-			</div>
-
-		</section>
-		<!-- container : ends -->
-			
-	</section>
-	<!-- inner-section : ends -->
-
-	<section class="inner-section add-top-half">
-
-		<section class="container">
-
-				<div class="row wow slideInLeft">
-					<article class="col-md-4 text-left services-inner-content grey-bg text-center equal-height-three">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/services/01.png"/>
-						<h3 class="dark">管道疏通</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>专业疏通厨房、厕所、淋浴房、楼房下水道、市政管道等各种排污管道</p>
-						
-					</article>
-					<article class="col-md-4 text-left services-inner-content dark-low-bg text-center equal-height-three">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/services/02.png"/>
-						<h3 class="white">房屋漏水</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>专业屋面、楼顶、卫生间、地下室、水池、鱼池、彩钢、油库、墙壁、管道、伸缩缝、水坝、桥梁、污水池、电缆沟、冷库、酸碱池、地窖等防水</p>
-						
-					</article>
-					<article class="col-md-4 text-left services-inner-content grey-bg text-center equal-height-three">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/services/03.png"/>
-						<h3 class="dark">铁艺制作与安装</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>铁艺大门、铁艺防盗窗、铁艺围栏、铁艺楼梯扶手、铁艺阳台护栏、家私、彩钢、不锈钢系列、采光工程等定制与安装</p>
-						
-					</article>
-				</div>
-
-				<div class="row wow slideInRight">
-					<article class="col-md-4 text-left services-inner-content dark-low-bg text-center equal-height-three">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/services/05.png"/>
-						<h3 class="white">打孔</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>水钻排窟窿、排门、电搞扒墙皮、起地面、打胀膜、打桩头、劈地器、风镐、道面切割据等</p>
-						
-					</article>
-					<article class="col-md-4 text-left services-inner-content grey-bg text-center equal-height-three">
-						<img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/services/06.png"/>
-						<h3 class="dark">开锁</h3>
-						<div class="liner-small-center"><span class="color-bg"></span></div>
-						<p>专业提供开锁、换锁、修锁服务。专业匹配汽车芯片钥匙，提供专业保险柜开锁、开密码锁柜、汽车锁、防盗门锁、AB锁、磁性锁、销售及安装各种锁具</p>
-						
-					</article>
-				</div>
-
-
-			</section>
-			<!-- container : ends -->
-			
-	</section>
-	<!-- inner-section : ends -->
-
-</section>
-
-
-
-
-<!-- page-section : starts -->
-<section id="news" class="news page-section color-bg">
-
-	<section class="inner-section">
-
-		<section class="container">
-		
-			<div class="row">
-				<article class="col-md-12 text-center">
-
-					<h1 class="main-heading white">我们在成长</h1>
-					<div class="liner"><span class="dark-bg"></span></div>
-					
-					<p class="promo-text white">We are an innovative design agency based on Serbia. We are experienced in designing websites, logos and identities. We love modern design principles and we really undergo that.</p>
-					
-				</article>
-			</div>
-
-		</section>
-		<!-- container : ends -->
-			
-	</section>
-	<!-- inner-section : ends -->
-
-	<section class="inner-section add-top-half">
-
-		<section class="container">
-
-				<div class="row news-list-item">
-					<article class="col-md-3 text-left news-inner-content grey-bg wow slideInLeft">
-						<h4><span class="news-date color">15th</span> <br/> 2015年9月</h4>
-						<h6 class="news-author color">by 刘少锋</h6>
-					</article>
-					<article class="col-md-9 text-left news-inner-content white-bg wow slideInRight">
-						<h3 class="dark">凌晨两点还在完善灵感，您造吗？</h3>
-						<div class="liner-small-left"><span class="color-bg"></span></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris.</p>
-						<a class="btn btn-presence btn-presence-color presence-ease" href="single-post.html">Read Full Story</a>
-					</article>
-				</div>
-
-				<div class="row news-list-item">
-					<article class="col-md-3 text-left news-inner-content grey-bg wow slideInLeft">
-						<h4><span class="news-date color">20th</span> <br/><span class="news-month">February</span> 2014</h4>
-						<h6 class="news-author color">by John Doe</h6>
-					</article>
-					<article class="col-md-9 text-left news-inner-content dark-low-bg wow slideInRight">
-						<h3 class="white">27 themes in a year is something great. Don't you love us?</h3>
-						<div class="liner-small-left"><span class="color-bg"></span></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris.</p>
-						<a class="btn btn-presence btn-presence-color presence-ease" href="single-post.html">Read Full Story</a>
-					</article>
-				</div>
-
-				<div class="row news-list-item">
-					<article class="col-md-3 text-left news-inner-content grey-bg wow slideInLeft">
-						<h4><span class="news-date color">20th</span> <br/><span class="news-month">February</span> 2014</h4>
-						<h6 class="news-author color">by John Doe</h6>
-					</article>
-					<article class="col-md-9 text-left news-inner-content white-bg wow slideInRight">
-						<h3 class="dark">Let's go on creative thinking. Let's build more cool stuffs</h3>
-						<div class="liner-small-left"><span class="color-bg"></span></div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris.</p>
-						<a class="btn btn-presence btn-presence-color presence-ease" href="single-post.html">Read Full Story</a>
-					</article>
-				</div>
-
-
-			</section>
-			<!-- container : ends -->
-			
-	</section>
-	<!-- inner-section : ends -->
-
-</section>
-<!-- page-section : ends -->
-
-
-
-
-
-<!-- page-section : starts -->
-<section id="portfolio" class="portfolio page-section">
-
-	<section class="inner-section">
-
-		<section class="container">
-		
-			<div class="row">
-				<article class="col-md-12 text-center wow slideInDown">
-
-					<h1 class="main-heading">Portfolio</h1>
-					<div class="liner"><span class="color-bg"></span></div>
-					
-					<p class="promo-text">We are an innovative design agency based on Serbia. We are experienced in designing websites, logos and identities. We love modern design principles and we really undergo that.</p>
-					
-				</article>
-			</div>
-
-		</section>
-		<!-- container : ends -->
-			
-	</section>
-	<!-- inner-section : ends -->
-
-	<!-- inner-section : starts -->
-	<section class="inner-section preview-wrap">
-
-		<section class="container">
-
-
-
-	            <!-- Container element for a single portfolio item. Do not remove! -->
-	            <div id="item_container" class="clearfix"></div>
-
-	            <!-- Filter -->
-	             <div id="filter" class="clearfix wow slideInDown">
-	                  <div id="filter_wrapper" class="color-bg">
-		                       <ul id="portfolioFilter" class="text-center">
-		                           <li class="filter" data-filter="all">All</li>
-		                           <li class="filter" data-filter="category1">ajax</li>
-		                           <li class="filter" data-filter="category2">images</li>
-		                           <li class="filter" data-filter="category3">lightbox</li>
-		                           <li class="filter" data-filter="category4">videos</li>
-		                           <li class="filter" data-filter="category5">gallery</li>
-		                       </ul>	
-	                  </div>
-	             </div>
-	             <!-- End: Filter -->
-
-
-<section id="portfolio-wrap">
-
-	<!-- Thumbnails -->
-	<div id="portfolio_thumbs">	
-     
-
-     <div id="grid" class="main sortablePortfolio clearfix">
-	    
-
-	  <!-- portfolio item -->
-                <div class="view view-ninth mix all category1">
-	                    <img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/portfolio_thumbs/01.jpg" />
-	                    <div class="mask mask-1"></div>
-	                    <div class="mask mask-2"></div>
-		                    <div class="content">
-		                        	<h2 class="">Image Slider</h2>
-		                        	<h6><span>Ajax Expander</span></h6>
-		                        	<div class="links-wrap">
-		                        		<a href="projects/project-slider.html" class="info ajax-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/ajax.png"/></a>
-		                        		<a href="single-project.html" class="info url-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/url.png"/></a>
-		                        	</div>
-		                    </div>
-                </div>
-                <!-- portfolio item : ends-->
-               
-
-                <!-- portfolio item -->
-                <div class="view view-ninth mix all category2 category3">
-                    <img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/portfolio_thumbs/01.jpg" />
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-		                    <div class="content">
-		                        	<h2 class="">Image Lightbox</h2>
-		                        	<h6><span>Zoom Lightbox</span></h6>
-		                        	<div class="links-wrap">
-		                        		<a href="resource/images/portfolio_zoom/01.jpg" class="info popup-image"><img title="51housesevice" alt="51housesevice" src="resource/images/ajax.png"/></a>
-		                        		<a href="single-project.html" class="info url-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/url.png"/></a>
-		                        	</div>
-		                    </div>
-                </div>	    
-                <!-- portfolio item : ends-->
-
-                <!-- portfolio item -->
-                <div class="view view-ninth mix all category1">
-                    <img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/portfolio_thumbs/01.jpg" />
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-		                    <div class="content">
-		                        	<h2 class="">Youtube Video</h2>
-		                        	<h6><span>Ajax Expander</span></h6>
-		                        	<div class="links-wrap">
-		                        		<a href="projects/project-youtube.html" class="info ajax-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/ajax.png"/></a>
-		                        		<a href="single-project.html" class="info url-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/url.png"/></a>
-		                        	</div>
-		                    </div>
-                </div>
-                <!-- portfolio item : ends-->
-
-                 <!-- portfolio item -->
-                <div class="view view-ninth mix all category4 category3">
-                    <img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/portfolio_thumbs/01.jpg" />
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-		                    <div class="content">
-		                        	<h2 class="">Youtube Lightbox</h2>
-		                        	<h6><span>Zoom Video Lightbox</span></h6>
-		                        	<div class="links-wrap">
-		                        		<a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="info popup-youtube"><img title="51housesevice" alt="51housesevice" src="resource/images/ajax.png"/></a>
-		                        		<a href="single-project.html" class="info url-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/url.png"/></a>
-		                        	</div>
-		                    </div>
-                </div>
-                <!-- portfolio item : ends-->
-
-	<!-- portfolio item -->
-                <div class="view view-ninth mix all category5">
-                    <img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/portfolio_thumbs/01.jpg" />
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-		                    <div class="content">
-		                        	<h2 class="">Image Gallery</h2>
-		                        	<h6><span>Zoom Lightbox Gallery</span></h6>
-		                        	<div class="links-wrap">
-		                        		<a href="resource/images/portfolio_zoom/01.jpg" class="info popup-gallery"><img title="51housesevice" alt="51housesevice" src="resource/images/ajax.png"/></a>
-		                        		<a href="single-project.html" class="info url-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/url.png"/></a>
-		                        	</div>
-		                    </div>
-                </div>
-                <!-- portfolio item : ends-->
-
-                <!-- portfolio item -->
-                <div class="view view-ninth mix all category4 category3">
-                    <img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/portfolio_thumbs/01.jpg" />
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-		                    <div class="content">
-		                        	<h2 class="">Vimeo Lightbox</h2>
-		                        	<h6><span>Zoom Video Lightbox</span></h6>
-		                        	<div class="links-wrap">
-		                        		<a href="https://vimeo.com/45830194" class="info popup-vimeo"><img title="51housesevice" alt="51housesevice" src="resource/images/ajax.png"/></a>
-		                        		<a href="single-project.html" class="info url-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/url.png"/></a>
-		                        	</div>
-		                    </div>
-                </div>
-                <!-- portfolio item : ends-->
-
-                <!-- portfolio item -->
-                <div class="view view-ninth mix all category1 category4">
-                    <img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/portfolio_thumbs/01.jpg" />
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-		                    <div class="content">
-		                        	<h2 class="">Youtube Video</h2>
-		                        	<h6><span>Ajax Expander</span></h6>
-		                        	<div class="links-wrap">
-		                        		<a href="projects/project-youtube.html" class="info ajax-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/ajax.png"/></a>
-		                        		<a href="single-project.html" class="info url-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/url.png"/></a>
-		                        	</div>
-		                    </div>
-                </div>
-                <!-- portfolio item : ends-->
-
-                <!-- portfolio item -->
-                <div class="view view-ninth mix all category4 category3">
-                    <img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/portfolio_thumbs/01.jpg" />
-                    <div class="mask mask-1"></div>
-                    <div class="mask mask-2"></div>
-		                   <div class="content">
-		                        	<h2 class="">Dailymotion Lightbox</h2>
-		                        	<h6><span>Zoom Video Lightbox</span></h6>
-		                        	<div class="links-wrap">
-		                        		<a href="http://www.dailymotion.com/video/xxgmlg_the-ghosts-everything-will-do_music#.UV71MasY3wE" class="info popup-dailymotion"><img title="51housesevice" alt="51housesevice" src="resource/images/ajax.png"/></a>
-		                        		<a href="single-project.html" class="info url-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/url.png"/></a>
-		                        	</div>
-		                    </div>
-                </div>	    
-                <!-- portfolio item : ends-->
-
-                <!-- portfolio item -->
-                <div class="view view-ninth mix all category5">
-	                    <img title="51housesevice" alt="51housesevice" class="img-responsive" src="resource/images/portfolio_thumbs/01.jpg" />
-	                    <div class="mask mask-1"></div>
-	                    <div class="mask mask-2"></div>
-		                    <div class="content">
-		                        	<h2 class="">Image Gallery</h2>
-		                        	<h6><span>Zoom Lightbox Gallery</span></h6>
-		                        	<div class="links-wrap">
-		                        		<a href="resource/images/portfolio_zoom/01.jpg" class="info popup-gallery"><img title="51housesevice" alt="51housesevice" src="resource/images/ajax.png"/></a>
-		                        		<a href="single-project.html" class="info url-trigger"><img title="51housesevice" alt="51housesevice" src="resource/images/url.png"/></a>
-		                        	</div>
-		                    </div>
-                </div>
-                <!-- portfolio item : ends-->
-
-	  </div>          
-	<!-- End: Grid -->
-
-
-	</div>
-	 <!-- End: Thumbnails -->
-
-	</section>       
-	<!-- End: Portfolio Wrap -->
-
-</section>
-
-	</section>
-	<!-- inner-section : ends-->
-
-</section>
-<!-- page-section : ends -->
-
-
-
-
-
-
-
-<!-- page-section : starts -->
-<section id="contact" class="contact custom-bg-cyan separator-section">
-	<section class="inner-section">
-
-		<section class="container">
-
-			<div class="row">
-				<article class="col-md-12 text-center">
-
-					<h1 class="main-heading white wow slideInDown">联系我们</h1>
-					<div class="liner"><span class="dark-bg"></span></div>
-					
-					<p class="promo-text white wow slideInDown">If you love our works and you like to work together with us, do not hesitate to contact us. A nice quote is always awaiting you! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					
-				</article>
-			</div>
-		
-			<div class="row">
-				<article class="col-md-12 text-center">
-
-
-					<div id="contact-carousel" class="contact-carousel owl-carousel owl-nav-sticky-wide">
-
-						<div class="item contact-block">
-								<div class="email-thumb"><img title="51housesevice" alt="51housesevice" src="resource/images/email.png"></div>
-								<a class="email-us  presence-ease" href="#">hello@domain.inc</a>
-								<p class="contact-subline"><span>We are online from 09.00 - 18.00, Mountain Time</span></p>
-								<a class="btn btn-presence btn-presence-white presence-ease contact-form-expand contact-carousel-custom-next-trigger" href="#">Show Contact Form</a>
+					<div class="col-md-4 wow animated fadeInUp">
+						<div class="price-table text-center">
+							<span>Silver</span>
+							<div class="value">
+								<span>$</span>
+								<span>24,35</span><br>
+								<span>month</span>
+							</div>
+							<ul>
+								<li>No Bonus Points</li>
+								<li>No Bonus Points</li>
+								<li>No Bonus Points</li>
+								<li>No Bonus Points</li>
+								<li><a href="#">sign up</a></li>
+							</ul>
 						</div>
-						<!-- contact-block:ends -->
-
-
-<div class="item contact-block contact-mail-wrap">
-
-	<div class="row">
-		<article class="col-md-12">
-			<div class="alert alert-error error" id="fname">
-				<p>Name must not be empty</p>
-			</div>
-			<div class="alert alert-error  error" id="fmail">
-				<p>Please provide a valid email</p>
-			</div>
-			 <div class="alert alert-error  error" id="fmsg">
-				 <p>Message should not be empty</p>
-			 </div>
-		</article>
-	</div>
-
-	 <form name="myform" id="contactForm" action="sendcontact.php" enctype="multipart/form-data" method="post"> 
-		<div class="row">
-			<article class="col-md-12  col-sm-12">
-				<input type="text" placeholder="您的称呼" id="name" name="name" size="100">
-			</article>
-		</div>
-		<div class="row">
-			<article class="col-md-12  col-sm-12" >
-				 <input type="text" placeholder="联系邮箱" name="email" id="email" size="30">
-			 </article>
-		</div>
-		<div class="row add-top-small" >
-			 <article class="col-md-12">
-				<textarea placeholder="您的意见" name="message" cols="40" rows="3" id="msg"></textarea>
-				<div class="btn-wrap">
-					<button class="btn btn-presence btn-presence-white presence-ease" id="submit" name="submit" type="submit">提交意见</button>
-				</div>
-			</article>
-		</div>
-	 </form>
-
-</div> 
-<!-- contact-block:ends -->
-
-						
-						<div class="item contact-block">
-								<div class="newsletter-thumb"><img title="51housesevice" alt="51housesevice" src="resource/images/newletter.png"></div>
-								<a class="email-us  presence-ease" href="#">Subscribe Today</a>
-								<p class="contact-subline"><span>We are releasing amazing newsletters each month</span></p>
-								<a class="btn btn-presence btn-presence-white presence-ease" href="#">Grab Newsletter</a>
-						</div>
-						<!-- contact-block:ends -->
-
-
-						<div class="item contact-block">
-								<div class="twitter-thumb"><img title="51housesevice" alt="51housesevice" src="resource/images/tweet.png"></div>
-								<a class="email-us  presence-ease" href="#">关注我们</a>
-								<p class="contact-subline"><span>We are always active on twitter</span></p>
-								<a class="btn btn-presence btn-presence-white presence-ease" href="#">@51houseservice</a>
-						</div>
-						<!-- contact-block:ends -->
-
-
 					</div>
 					
-				</article>
-			</div>
-			<!-- row : ends -->
-
-
-			
-
-
-		</section>
-		<!-- container : ends -->
-			
-	</section>
-	<!-- inner-section : ends -->
-
-</section>
-
-
-
-
-
-<footer id="foot" class="mastfoot">
-
-	<section class="inner-section foot-top" style="background-color: #000">
-		
-		<section class="container">
-
-			<div class="row">
-				<article class="col-md-6 credentials-wrap">
-					<ul class="credentials text-left">
-						<li><a href="#"><img title="51housesevice" alt="51housesevice" src="resource/images/social/mail.png"/><span class="credential-text">liushaofeng89@qq.com</span></a></li>
-						<li><a href="#"><img title="51housesevice" alt="51housesevice" src="resource/images/social/phone.png"/><span class="credential-text">18980057435</span></a></li>
-					</ul>
-				</article>
-				<article class="col-md-6 credentials-wrap">
-					<ul class="credentials text-right">
-						<li><a href="#"><img title="51housesevice" alt="51housesevice" src="resource/images/social/locate.png"/><span class="credential-text">四川省成都市郫县德源镇红旗大道北</span></a></li>
-					</ul>
-				</article>
-			</div>
-
-		</section>
-
-
-	</section>
-
-
-
-	<section class="inner-section foot-bottom">
-		
-		<section class="container">
-
-			<div class="row">
-				<article class="col-md-6 social-wrap">
-					<ul class="social text-left">
-						<li><a href="#"><img title="51housesevice" alt="51housesevice" src="resource/images/social/qq.png"/></a></li>
-						<li><a href="#"><img title="51housesevice" alt="51housesevice" src="resource/images/social/weixin.png"/></a></li>
-						<li><a href="#"><img title="51housesevice" alt="51housesevice" src="resource/images/social/sina.png"/></a></li>
-					</ul>
-				</article>
-				<article class="col-md-6 credits-wrap text-right">
-					<p>居家好帮手，你值得拥有！</p>
-					<p>Copyright &copy; 51houseservice.com 2015 All rights reserved. <br/> 蜀ICP备15024542号-x</p>
-				</article>
-			</div>
-
-		</section>
-
-
-	</section>
+					<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.4s">
+						<div class="price-table featured text-center">
+							<span>Gold</span>
+							<div class="value">
+								<span>$</span>
+								<span>50,00</span><br>
+								<span>month</span>
+							</div>
+							<ul>
+								<li>Free Trial</li>
+								<li>Free Trial</li>
+								<li>Free Trial</li>
+								<li>Free Trial</li>
+								<li><a href="#">sign up</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.8s">
+						<div class="price-table text-center">
+							<span>Diamond</span>
+							<div class="value">
+								<span>$</span>
+								<span>123,12</span><br>
+								<span>month</span>
+							</div>
+							<ul>
+								<li>All Bonus Points</li>
+								<li>All Bonus Points</li>
+								<li>All Bonus Points</li>
+								<li>All Bonus Points</li>
+								<li><a href="#">sign up</a></li>
+							</ul>
+						</div>
+					</div>
 	
+				</div>
+			</div>
+		</section>
+		<!-- end Price section -->
+		
+		<!-- Social section -->
+		<section id="social" class="parallax">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+					
+						<div class="sec-title text-center white wow animated fadeInDown">
+							<h2>FOLLOW US</h2>
+							<p>Beautifully simple follow buttons to help you get followers on</p>
+						</div>
+						
+						<ul class="social-button">
+							<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>							
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end Social section -->
+		
+		<!-- Contact section -->
+		<section id="contact" >
+			<div class="container">
+				<div class="row">
+					
+					<div class="sec-title text-center wow animated fadeInDown">
+						<h2>Contact</h2>
+						<p>Leave a Message</p>
+					</div>
+					
+					
+					<div class="col-md-7 contact-form wow animated fadeInLeft">
+						<form action="#" method="post">
+							<div class="input-field">
+								<input type="text" name="name" class="form-control" placeholder="Your Name...">
+							</div>
+							<div class="input-field">
+								<input type="email" name="email" class="form-control" placeholder="Your Email...">
+							</div>
+							<div class="input-field">
+								<input type="text" name="subject" class="form-control" placeholder="Subject...">
+							</div>
+							<div class="input-field">
+								<textarea name="message" class="form-control" placeholder="Messages..."></textarea>
+							</div>
+					       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
+						</form>
+					</div>
+					
+					<div class="col-md-5 wow animated fadeInRight">
+						<address class="contact-details">
+							<h3>Contact Us</h3>						
+							<p><i class="fa fa-pencil"></i>Phoenix Inc.<span>PO Box 345678</span> <span>Little Lonsdale St, Melbourne </span><span>Australia</span></p><br>
+							<p><i class="fa fa-phone"></i>Phone: (415) 124-5678 </p>
+							<p><i class="fa fa-envelope"></i>website@yourname.com</p>
+						</address>
+					</div>
+		
+				</div>
+			</div>
+		</section>
+		<!-- end Contact section -->
+		
+		
+		</main>
+		
+		<!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+		
+          <!-- Contact Us -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Contact Us</h4>            
+			<p>
+			  051 Ave C South Saskatoon, 10 Elizabeth <br />
+			  Street Mountain Road, CA United States.
+			  <br /><br />
+			  Phone : 92 026 365 2569<br />
+			  Fax   : 92 026 365 2570
+			  <br /><br />
+			  <a href="mailto:#">supportcenter@mail.com</a>
+			</p>			
+          </div><!-- / .Contact Us -->
+		  
+		  <!-- Useful Links -->
+          <div class="col-xs-12 col-sm-3 col-md-3">            
+            <h4>Useful Links</h4>
+            <p>
+              <a href="#">Simple and clean blog design </a><br />
+              <a href="#">We bring good to online presence  </a><br />
+              <a href="#">Fully responsive creative design  </a><br />
+              <a href="#">Creative homepage design </a><br />
+              <a href="#">Our services are most nifty  </a><br />
+              <a href="#">Most flexible theme </a><br />
+            </p>
+          </div><!-- / .Useful Links -->
+		  
+          <!-- Recent Tweets -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Gallery</h4>
+			<div class="gallery clearfix">
+			  <ul class="list-unstyled">
+			    <li><a href="#"><img src="img/avatar-1.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar-2.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar-3.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar-4.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar-5.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar-6.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar-7.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+				<li><a href="#"><img src="img/avatar-8.jpg" style="width:60px;height:60px;" alt="..."></a></li>				
+			   </ul>
+			</div>
+          </div><!-- / .Recent Tweets -->
+		  
+          <!-- Newsletter -->
+          <div class="col-xs-12 col-sm-3 col-md-3">
+            <h4>Newsletter</h4>
+            <p>
+              By subscribing to our mailing list you will get the latest news from us.              
+            </p>
+            <form class="form" role="form">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <div class="input-group">
+                    <label class="sr-only" for="subscribe-email">Email address</label>
+                    <input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-style btn-k btn-primary">OK</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+			<br />
+			<h4>Follow us on</h4>
+			  <ul class="list-inline">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-skype"></i></a></li>				
+			  </ul>
+          </div><!-- / .Newsletter -->
+		  
+        </div> <!-- / .row -->		
+      </div> <!-- / .container --> 	  
+    </footer><!-- / .Footer -->
 	
-
-</footer>
-
-
-</section>
-<!-- Mast-wrap:ends -->
-
-
-
-<!-- Core JS Libraries -->
-<script src="resource/bootstrap/js/jquery.js" type="text/javascript"></script>
-<script src="resource/javascripts/jquery.easing.1.3.js" type="text/javascript"></script>
-<script src="resource/bootstrap/js/bootstrap.js" ></script> 
-<!-- JS Plugins -->
-<script src="resource/javascripts/pace.min.js"></script>
-<script src="resource/javascripts/retina.js"></script>
-<script src="resource/javascripts/device.min.js"></script>
-<script src="resource/javascripts/owl.carousel.js"></script>
-<script src="resource/javascripts/waypoints.min.js"></script>
-<script src="resource/javascripts/jquery.tweet.js"></script>
-<script src="resource/javascripts/okvideo.js"></script>
-<script src="resource/javascripts/jquery.mixitup.js"></script>
-<script src="resource/javascripts/flexslider.js" ></script> 
-<script src="resource/javascripts/jquery.magnific-popup.js"></script> 
-<script src="resource/javascripts/smooth-scroll.js"></script>
-<script src="resource/javascripts/form-validation.js"></script>
-<script src="resource/javascripts/classie.js"></script>
-<script src="resource/javascripts/fancymenu-rollin.js"></script>
-<!-- Parallax Plugins Setup -->
-<script src="resource/javascripts/jquery.parallax.min.js"></script>
-<script src="resource/javascripts/parallax-init.js"></script>
-<!-- Scroll Animations Setup -->
-<script src="resource/javascripts/wow.js"></script>
-<script src="resource/javascripts/animations-init.js"></script>
-<!-- For videos in showcase slides -->
-<script src="resource/javascripts/showcase-video.js"></script>
-<!-- Custom Scripts Setup -->
-<script src="resource/javascripts/carousel-init.js" ></script> 
-<script src="resource/javascripts/portfolio.js"></script>
-<script src="resource/javascripts/intro.js"></script>
-<script src="resource/javascripts/main.js"></script>
-
-
-
-</body>
+	<!-- Copyright -->
+	<div class="copyrights">
+		<div class="container">
+		  <div class="row">
+			<div class="col-sm-12">
+			  <div class="copyright">
+				<small>Rooster <i class="fa fa-coffee"></i> Collect from <a href="http://www.cssmoban.com/" title="��ҳģ��" target="_blank">��ҳģ��</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="ģ��֮��">ģ��֮��</a></small>
+			  </div>
+			</div>
+		  </div> <!-- / .row -->
+		</div> <!-- / .container --> 
+	</div><!-- / .Copyright -->
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Google Map API -->
+		
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+    </body>
 </html>

@@ -1,3 +1,8 @@
+function reloadVerifyImg(obj)
+{
+	$(obj).attr("src", "verifyCode ?t="+Date() );
+}
+
 $(function() { 
 	    $("button[type='submit']").click(function(){
 	       $(this).button('loading').delay(1000).queue(function() {
@@ -9,3 +14,4 @@ $(function() {
 	    $("#logo").addClass("animated bounceInDown");
 	    $(".login-content").addClass("animated flipInX");
 	}); 
+

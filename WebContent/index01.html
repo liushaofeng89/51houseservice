@@ -10,8 +10,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>51HouseService</title>		
 		<!-- Meta Description -->
-        <meta name="description" content="致力于解决万千家庭的各种生活问题，让你足不出户。">
-        <meta name="keywords" content="管道疏通，房屋漏水，开锁，打孔，家电维修，家电回收">
+        <meta name="description" content="致力于解决万千家庭的开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计等各种生活问题，让你足不出户解决烦恼。">
+        <meta name="keywords" content="开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计">
         <meta name="author" content="刘少锋">
         <!-- Standard Favicon--> 
 		<link rel="shortcut icon" href="img/favicon.ico">
@@ -82,7 +82,7 @@
                         <li><a href="#service">服务</a></li>
                         <li><a href="#portfolio">图片</a></li>
                         <li><a href="#testimonials">成长</a></li>
-                        <li><a href="#price">价格</a></li>
+                        <li><a href="#price">服务费用</a></li>
                         <li><a href="#contact">反馈</a></li>
                     </ul>
                 </nav>
@@ -270,8 +270,8 @@
 				<div class="row">
 				
 					<div class="sec-title text-center wow animated fadeInDown">
-						<h2>FEATURED PROJECTS</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<h2>实景记录</h2>
+						<p>以下所有图片都来自服务实景拍摄，未经允许，不得转载和使用</p>
 					</div>
 					
 
@@ -400,7 +400,7 @@
 				<div class="row">
 				
 					<div class="sec-title text-center wow animated fadeInDown">
-						<h2>Price</h2>
+						<h2>服务费用</h2>
 						<p>Our price for your company</p>
 					</div>
 					
@@ -475,9 +475,9 @@
 						</div>
 						
 						<ul class="social-button">
-							<li class="wow animated zoomIn"><a href="#"><i class="fa fa-qq fa-2x"></i></a></li>
-							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-weixin fa-2x"></i></a></li>
-							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-weibo fa-2x"></i></a></li>							
+							<li class="wow animated zoomIn"><a href="#" onclick="shareToQzone(event)"><i class="fa fa-qq fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a class="fancybox" title="请关注我们的微信公众号" data-fancybox-group="works" href="img/weixin_code.jpg"><i class="fa fa-weixin fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.6s" onclick="shareToSinaWB(event)"><a href="#"><i class="fa fa-weibo fa-2x"></i></a></li>							
 						</ul>
 						
 					</div>
@@ -567,21 +567,8 @@
 		  
           <!-- Newsletter -->
           <div class="col-xs-12 col-sm-3 col-md-3">
-            <h4>消息订阅</h4>
-            <p>从下方提交邮箱，就可以接收最新的新闻资讯 </p>
-            <form class="form" role="form">
-              <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                  <div class="input-group">
-                    <label class="sr-only" for="subscribe-email">Email address</label>
-                    <input type="email" class="form-control" id="subscribe-email" placeholder="Enter your email">
-                    <span class="input-group-btn">
-                      <button type="submit" class="btn btn-style btn-k btn-primary">OK</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </form>
+            <h4>微信公众号</h4>
+            <p><img id="weixin-code" alt="" src="img/weixin_code.jpg"> </p>
 			<br />
 			<h4>关注我们</h4>
 			  <ul class="list-inline">
@@ -625,5 +612,6 @@
         <script src="js/wow.min.js"></script>
 		<!-- Custom Functions -->
         <script src="js/main.js"></script>
+        <script src="js/share.js"></script>
     </body>
 </html>

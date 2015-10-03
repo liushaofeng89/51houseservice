@@ -1,0 +1,50 @@
+/**
+/*	Header
+/* ==========================================*/
+#navigation {
+    -webkit-transition: all 0.8s ease 0s;
+       -moz-transition: all 0.8s ease 0s;
+        -ms-transition: all 0.8s ease 0s;
+         -o-transition: all 0.8s ease 0s;
+            transition: all 0.8s ease 0s;
+
+    background-color: rgba(0,0,0,.9);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 5px 0;
+}
+
+.navbar-brand{
+	padding: 5px 0;
+}
+h1.navbar-brand {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+section{
+	margin-top: 80px;
+}
+
+#menu{
+	margin-top: 15px;	
+}
+
+#content{
+	
+}
+
+.page-header{
+	margin: 0;
+}
+
+#about{
+	height: 100%;
+}

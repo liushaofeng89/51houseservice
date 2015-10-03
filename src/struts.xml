@@ -19,6 +19,16 @@
 		<global-exception-mappings>
 			<exception-mapping exception="java.lang.Exception" result="error" />
 		</global-exception-mappings>
+		
+		<action name="about">
+			<result name="success" type="redirect">/51houseservice.jsp#about</result> 
+		</action>
+		<action name="declare">
+			<result name="success" type="redirect">/51houseservice.jsp#declare</result> 
+		</action>
+		<action name="join">
+			<result name="success" type="redirect">/51houseservice.jsp#join</result> 
+		</action>
 
 		<action name="verifyCode" class="com.wyhouseservice.action.VerifyCodeAction">
 			<result name="success" type="stream">

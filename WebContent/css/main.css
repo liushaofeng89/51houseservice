@@ -270,7 +270,7 @@ main > section {
          -o-transition: all 0.8s ease 0s;
             transition: all 0.8s ease 0s;
 
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,.9);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     padding: 5px 0;
 }
@@ -278,7 +278,9 @@ main > section {
 #navigation.animated-header {
     padding: 20px 0;
 }
-
+.navbar-brand{
+	padding: 5px 0;
+}
 h1.navbar-brand {
     font-size: 20px;
     font-weight: 700;
@@ -991,20 +993,6 @@ textarea.form-control {
 
 
 /*============================================================
-	Google Maps
-==============================================================*/
-
-#google-map {
-    padding: 0;
-}
-
-#map-canvas {
-    width: 100%;
-    height: 300px;
-}
-
-
-/*============================================================
 	Footer
 ==============================================================*/
 
@@ -1226,6 +1214,20 @@ footer .form-control {
   border-color: #ccc;
 }
 
+/*============================================================
+	copyright
+==============================================================*/
+.copyright{
+	margin: 15px 0;
+}
+
+.copyright p,.copyright p a{
+	color:#aaa;
+}
+
+.copyright p a:hover{
+	text-decoration: underline;
+}
 
 
 /*============================================================ 

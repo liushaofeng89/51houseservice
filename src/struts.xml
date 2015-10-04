@@ -10,6 +10,16 @@
 
 	<package name="default" namespace="/" extends="struts-default">
 
+		<interceptors>
+			<interceptor name="userVisitedInterceptor" class="com.wyhouseservice.interceptor.VisitedUserInfoInterceptor" />
+			
+			<interceptor-stack name="51houseserviceItcpt">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="userVisitedInterceptor"/>
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="51houseserviceItcpt"/>
 		<default-action-ref name="index" />
 
 		<global-results>
@@ -20,22 +30,31 @@
 			<exception-mapping exception="java.lang.Exception" result="error" />
 		</global-exception-mappings>
 		
+		<action name="index">
+			<result name="success" type="dispatcher"> 
+			    <param name="location">/index01.jsp</param> 
+			</result>
+		</action>
+		<action name="login">
+			<result name="success" type="dispatcher"> 
+			    <param name="location">/login.jsp</param> 
+			</result>
+		</action>
 		<action name="about">
-			<result name="success" type="redirect">/51houseservice.jsp#about</result> 
+			<result name="success">/51houseservice.jsp</result> 
 		</action>
 		<action name="declare">
-			<result name="success" type="redirect">/51houseservice.jsp#declare</result> 
+			<result name="success">/51houseservice.jsp</result> 
 		</action>
 		<action name="join">
-			<result name="success" type="redirect">/51houseservice.jsp#join</result> 
+			<result name="success">/51houseservice.jsp</result> 
 		</action>
 
-		<action name="verifyCode" class="com.wyhouseservice.action.VerifyCodeAction">
-			<result name="success" type="stream">
-				<param name="contentType">image/jpeg</param>
-				<param name="inputName">imageStream</param>
-				<param name="bufferSize">2048</param>
-			</result>
+		<action name="rand" class="com.wyhouseservice.action.VerifyCodeAction">
+			<result type="stream">  
+                <param name="contentType">image/jpeg</param>  
+                <param name="inputName">inputStream</param>  
+            </result> 
 		</action>
 
 	</package>

@@ -6,9 +6,7 @@ import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 public class AuthorizationInterceptor extends AbstractInterceptor
 {
 
-    /**
-     * 
-     */
+    /** serialVersionUID */
     private static final long serialVersionUID = 4611905444186419742L;
 
     @Override

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>  
+    <class name="com.wyhouseservice.model.VisitedClientInfoModel" table="_51houseservice_visited">  
+        <id name="id" type="java.lang.Integer">  
+            <column name="id"/>  
+            <generator class="native" />  
+        </id>  
+        <property name="visitedTime" type="java.util.Date">  
+            <column name="visited_time" not-null="false" />  
+        </property>  
+        <property name="ip" type="java.lang.String">  
+            <column name="client_ip" unique="false" sql-type="VARCHAR(15)" not-null="false" />  
+        </property>  
+        <property name="area" type="java.lang.String">  
+            <column name="client_area" length="20" not-null="false" />  
+        </property>  
+        <property name="browser" type="java.lang.String">  
+            <column name="client_browser" length="30" not-null="false" />  
+        </property>  
+        <property name="os" type="java.lang.String">  
+            <column name="client_os" length="50" not-null="false" />  
+        </property>  
+        <property name="requestURL" type="java.lang.String">  
+            <column name="request_url" length="100" not-null="false" />  
+        </property>  
+    </class>  
+</hibernate-mapping> 

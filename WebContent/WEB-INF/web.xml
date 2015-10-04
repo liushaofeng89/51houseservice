@@ -4,6 +4,10 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	id="WebApp_ID" version="2.5">
 	<display-name>51houseservice</display-name>
+	
+<!-- 	<listener>
+		<listener-class>com.wyhouseservice.listener.UserVisitedCountListener</listener-class>  
+	</listener> -->
 
 	<filter>
 		<filter-name>struts2</filter-name>
@@ -25,6 +29,6 @@
 	</error-page>
 
 	<welcome-file-list>
-		<welcome-file>index01.html</welcome-file>
+		<welcome-file>index</welcome-file>
 	</welcome-file-list>
 </web-app>

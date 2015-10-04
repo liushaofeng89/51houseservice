@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory name="foo">
+		<!--指定连接数据库用的驱动-->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!--LOCAL指定连接数据库的路径jdbc:mysql://localhost:3306/KrmlvYtGuPhRYlnIlmkd-->
+        <property name="connection.url">jdbc:mysql://localhost:3306/51houseservice</property>
+        <!--LOCAL指定连接数据库的用户名root-->
+        <property name="connection.username">root</property>
+        <!--LOCAL指定连接数据库的密码Huawei@345-->
+        <property name="connection.password">Huawei@345</property>
+        <!--指定数据库使用的SQL方言-->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- show_sql 打印SQL语句 -->
+        <property name="show_sql">true</property>
+        
+        <!-- 添加实体类的映射文件-->
+      	<mapping resource="com/wyhouseservice/model/VisitedClientInfoModel.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

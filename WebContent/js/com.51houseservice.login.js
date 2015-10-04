@@ -1,6 +1,7 @@
 function reloadVerifyImg(obj)
 {
-	$(obj).attr("src", "verifyCode ?t="+Date() );
+	var currentTime= new Date().getTime();  
+    obj.src = "rand?d=" + currentTime;  
 }
 
 $(function() { 

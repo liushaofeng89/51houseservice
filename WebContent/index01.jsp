@@ -138,7 +138,7 @@
 						<div class="bg-img bg-img-3"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2>来源于生活，也高于生活</h2>
+                                <h2>生活无忧，相伴您我</h2>
                                 <span>快乐生活，健康品质</span>
                                 <a href="login" class="btn btn-blue btn-effect">加入我们</a>
                             </div>

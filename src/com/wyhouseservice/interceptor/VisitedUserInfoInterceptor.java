@@ -4,9 +4,11 @@ import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.log4j.Logger;
 import org.apache.struts2.ServletActionContext;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 import com.wyhouseservice.hbm.WYHouseServiceBaseDAO;
@@ -36,14 +38,14 @@ public class VisitedUserInfoInterceptor extends AbstractInterceptor
         {
             VisitedClientInfoModel parseClientInfo = parseClientInfo(request);
             String clientIP = WYHouseserviceUtil.getClientIP(request);
-            
+
             parseClientInfo.setIp(clientIP);
             parseClientInfo.setVisitedTime(new Date());
             parseClientInfo.setRequestURL(request.getRequestURI());
-            
+
             String cityInfoJson = BaiduServiceUtil.getCityByIP(clientIP);
             parseClientInfo.setArea(convertToCity(cityInfoJson));
-            
+
             new WYHouseServiceBaseDAO().save(parseClientInfo);
         }
         return arg0.invoke();
@@ -51,14 +53,21 @@ public class VisitedUserInfoInterceptor extends AbstractInterceptor
 
     private String convertToCity(String cityInfoJson)
     {
-        BaiduInfo fromJson = new Gson().fromJson(cityInfoJson, BaiduInfo.class);
-        if (fromJson != null)
+        try
         {
-            String string = fromJson.getRetData().getProvince() + "-" + fromJson.getRetData().getCity();
-            System.out.println(string);
-            return string;
+            BaiduInfo fromJson = new Gson().fromJson(cityInfoJson, BaiduInfo.class);
+            if (fromJson != null)
+            {
+                String string = fromJson.getRetData().getCountry() + "-"
+                    + fromJson.getRetData().getProvince() + "-" + fromJson.getRetData().getCity();
+                System.out.println(string);
+                return string;
+            }
+        } catch (JsonSyntaxException e)
+        {
+            Logger.getLogger(this.getClass()).error("百度IP查询结果异常："+cityInfoJson);
         }
-        return null;
+        return "未知城市";
     }
 
     private VisitedClientInfoModel parseClientInfo(HttpServletRequest request)

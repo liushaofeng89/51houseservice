@@ -4,6 +4,11 @@ function reloadVerifyImg(obj)
     obj.src = "rand?d=" + currentTime;  
 }
 
+function linkHome()
+{
+	window.location.href="index";
+}
+
 $(function() { 
 	    $("button[type='submit']").click(function(){
 	       $(this).button('loading').delay(1000).queue(function() {

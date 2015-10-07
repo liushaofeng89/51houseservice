@@ -29,7 +29,7 @@
 				   <li class="active">
 				      <a href="#home" data-toggle="tab">我要登录</a>
 				   </li>
-				   <li class="dropdown">
+				   <li class="dropdown disabled">
 				      <a href="#" id="myTabDrop1" class="dropdown-toggle"  data-toggle="dropdown">我要注册 <b class="caret"></b></a>
 				      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
 				         <li><a href="#personal" tabindex="-1" data-toggle="tab">个人</a></li>
@@ -39,24 +39,23 @@
 				</ul>
 				<div id="myTabContent" class="tab-content">
 				   <div class="tab-pane fade in active" id="home">
-				      <form class="form-horizontal" role="form">
+				      <form class="form-horizontal" role="form" action="checkLogin" method="post">
 							   <div class="form-group">
 							      <label for="firstname" class="col-sm-2 control-label">用户名</label>
 							      <div class="col-sm-10">
-							         <input type="text" class="form-control" id="userName" 
-							            placeholder="用户名/手机号/邮箱账号">
+							         <input type="text" class="form-control" name="userName" placeholder="用户名/手机号/邮箱账号">
 							      </div>
 							   </div>
 							   <div class="form-group">
 							      <label for="lastname" class="col-sm-2 control-label">密码</label>
 							      <div class="col-sm-10">
-							         <input type="text" class="form-control" id="pwd" placeholder="登录密码">
+							         <input type="text" class="form-control" name="pwd" placeholder="登录密码">
 							      </div>
 							   </div>
 							   <div class="form-group">
 							      <label for="lastname" class="col-sm-2 control-label">验证码</label>
 							      <div class="col-sm-3">
-							         <input type="text" class="form-control" id="verifyCode" placeholder="验证码">
+							         <input type="text" class="form-control" name="verifyCode" placeholder="验证码">
 							      </div>
 							      <div class="col-sm-2" style="cursor: pointer;">
 							      	<img src="rand" alt="验证码" title="点击刷新验证码" onclick="reloadVerifyImg(this)"/>
@@ -69,7 +68,7 @@
 									    </div>
 									    <div class="col-sm-4 pull-right">
 									        <button type="submit" class="btn btn-default" data-loading-text="登录中...">登录</button>
-									        <button type="button" class="btn btn-default">返回</button>
+									        <button type="button" class="btn btn-default" onclick="linkHome()">返回</button>
 									    </div>
 							   		</div>
 							   </div>
@@ -131,8 +130,9 @@
 							      </div>
 							   </div>
 							   <div class="form-group">
-							      <div class="col-sm-offset-10 col-sm-2">
-							         <button type="submit" class="btn btn-default">注册</button>
+							       <div class="col-sm-offset-8 col-sm-4">
+							         <button type="submit" class="btn btn-default disabled">注册</button>
+							         <button type="button" class="btn btn-default" onclick="linkHome()">返回</button>
 							      </div>
 							   </div>
 							</form>
@@ -197,8 +197,9 @@
 							      </div>
 							   </div>
 							   <div class="form-group">
-							      <div class="col-sm-offset-10 col-sm-2">
-							         <button type="submit" class="btn btn-default">注册</button>
+							      <div class="col-sm-offset-8 col-sm-4">
+							         <button type="submit" class="btn btn-default disabled">注册</button>
+							         <button type="button" class="btn btn-default" onclick="linkHome()">返回</button>
 							      </div>
 							   </div>
 							</form>

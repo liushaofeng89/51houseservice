@@ -5,10 +5,6 @@
 	id="WebApp_ID" version="2.5">
 	<display-name>51houseservice</display-name>
 	
-<!-- 	<listener>
-		<listener-class>com.wyhouseservice.listener.UserVisitedCountListener</listener-class>  
-	</listener> -->
-
 	<filter>
 		<filter-name>struts2</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>

@@ -39,4 +39,14 @@ public final class WYHouseserviceUtil
         }
         return ip;
     }
+
+    /**
+     * 判断字符串是否为空或者为空字符串
+     * @param str 需要判断的字符串
+     * @return 该字符串是否为空
+     */
+    public static boolean isEmpty(String str)
+    {
+        return str == null || str.isEmpty();
+    }
 }

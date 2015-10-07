@@ -9,6 +9,7 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -20,6 +21,7 @@ import javax.servlet.http.HttpSession;
 import org.apache.struts2.ServletActionContext;
 
 import com.opensymphony.xwork2.ActionSupport;
+import com.wyhouseservice.IWYHouseServiceConstant;
 
 /**
  * 校验码生成类
@@ -36,7 +38,6 @@ public class VerifyCodeAction extends ActionSupport
     public static final int VERIFY_CODE_IMG_WIDTH = 100;
     /** 校验码图片高度 */
     public static final int VERIFY_CODE_IMG_HEIGHT = 30;
-    public static final String VERIFY_CODE_KEY = "rand";
 
     // 使用到Algerian字体，系统里没有的话需要安装字体，字体只显示大写，去掉了1,0,i,o几个容易混淆的字符
     public static final String VERIFY_CODES = "23456789ABCDEFGHJKLMNPQRSTUVWXYZ";
@@ -57,12 +58,18 @@ public class VerifyCodeAction extends ActionSupport
         // 生成随机字串
         String verifyCode = generateVerifyCode(4);
 
+        generateCodeImage(verifyCode);
+
         HttpServletRequest request = ServletActionContext.getRequest();
         // 存入会话session
         HttpSession session = request.getSession(true);
-        session.setAttribute(VERIFY_CODE_KEY, verifyCode.toUpperCase());
-        System.out.println("已生成验证码：" + verifyCode);
+        session.setAttribute(IWYHouseServiceConstant.SESSION_KEY_OF_RAND_CODE, verifyCode.toUpperCase());
 
+        return SUCCESS;
+    }
+
+    private void generateCodeImage(String verifyCode) throws IOException
+    {
         int verifySize = verifyCode.length();
         BufferedImage image = new BufferedImage(VERIFY_CODE_IMG_WIDTH, VERIFY_CODE_IMG_HEIGHT,
             BufferedImage.TYPE_INT_RGB);
@@ -136,8 +143,6 @@ public class VerifyCodeAction extends ActionSupport
         imageOut.close();
         ByteArrayInputStream input = new ByteArrayInputStream(output.toByteArray());
         this.setInputStream(input);
-
-        return SUCCESS;
     }
 
     /**

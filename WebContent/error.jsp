@@ -34,7 +34,7 @@
 				<h1>404</h1>
                 <h3>Oops! Bad request ...</h3>              
               <p>对不起，你所请求的资源不存在...</p>              
-              <a href="/51houseservice">首页</a> <span class="divider">|</span> <a href="/51houseservice/login.html">登录</a> <span class="divider">|</span> <a href="#">联系我们</a>
+              <a href="/51houseservice">首页</a> <span class="divider">|</span> <a href="login">登录</a> <span class="divider">|</span> <a href="#">联系我们</a>
               </div>
 			</div>
           </div>

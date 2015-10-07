@@ -8,7 +8,7 @@ import java.util.Date;
  * @date 2015年10月4日
  * @version 1.0.0
  */
-public class VisitedClientInfoModel
+public class VisitedClientInfoModel implements IWYHouseServiceBaseModel
 {
     private int id;
     private Date visitedTime;

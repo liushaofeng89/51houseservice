@@ -9,7 +9,7 @@
         <meta charset="utf-8">
 		<!-- Always force latest IE rendering engine or request Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>首页 - 51HouseService</title>		
+        <title>首页 - 到家了</title>		
 		<!-- Meta Description -->
         <meta name="description" content="致力于解决万千家庭的开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计等各种生活问题，让你足不出户解决烦恼。">
         <meta name="keywords" content="开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计">
@@ -112,7 +112,7 @@
 
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2 class="animated fadeInDown">诗歌般的生活，怎能少了你我</h2>
+                                <h2 class="animated fadeInDown">维修师傅马上到家了</h2>
                                 <span class="animated fadeInDown">足不出户就能解决烦恼</span>
                                 <a href="login" class="btn btn-blue btn-effect">加入我们</a>
                             </div>
@@ -125,7 +125,7 @@
 						<div class="bg-img bg-img-1"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2>解决每个人都会遇到的生活烦恼</h2>
+                                <h2>幸福到家了</h2>
                                 <span>生活有你，也有我</span>
                                 <a href="login" class="btn btn-blue btn-effect">加入我们</a>
                             </div>
@@ -138,7 +138,7 @@
 						<div class="bg-img bg-img-3"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2>生活无忧，相伴您我</h2>
+                                <h2>快乐到家了</h2>
                                 <span>快乐生活，健康品质</span>
                                 <a href="login" class="btn btn-blue btn-effect">加入我们</a>
                             </div>
@@ -531,12 +531,12 @@
             <h4>联系方式</h4>            
 			<p>
 			  四川省成都市郫县德源镇 <br />
-			  红旗大道北
+			  红旗大道北展望东路
 			  <br /><br />
 			  电话 : xx xxx xxx xxxx<br />
 			  传真 : xx xxx xxx xxxx
 			  <br /><br />
-			  <a href="mailto:#">admin@xx.com</a>
+			  <a href="mailto:admin@51houseservice.com">admin@51houseservice.com</a>
 			</p>			
           </div><!-- / .Contact Us -->
 		  
@@ -586,7 +586,7 @@
         	<div class="col-xs-12 col-sm-12 col-md-12">
         		<div class="copyright">
 		        	<div class="pull-left">
-		        		<p>版权所有 &copy; 2015 51HOUSESERVICE.COM。 保留一切权力。  <!-- 蜀ICP备14026954号-3 --></p>
+		        		<p>版权所有 &copy; 2015 51HOUSESERVICE.COM。 保留一切权力。 <a href="http://www.miitbeian.gov.cn/">蜀ICP备14026954号-3</a> </p>
 		        	</div>
 		        	<div class="pull-right">
 		        		<p>

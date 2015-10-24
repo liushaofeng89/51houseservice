@@ -48,13 +48,13 @@
 		</action>
 		
 		<action name="about">
-			<result name="success">/51houseservice.jsp</result> 
+			<result name="success">/about.jsp</result> 
 		</action>
 		<action name="declare">
-			<result name="success">/51houseservice.jsp</result> 
+			<result name="success">/declare.jsp</result> 
 		</action>
 		<action name="join">
-			<result name="success">/51houseservice.jsp</result> 
+			<result name="success">/join.jsp</result> 
 		</action>
 
 		<action name="rand" class="com.wyhouseservice.action.VerifyCodeAction">

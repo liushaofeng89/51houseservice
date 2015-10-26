@@ -1,6 +1,11 @@
 package com.wyhouseservice.action;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
+
 import com.opensymphony.xwork2.ActionSupport;
+import com.wyhouseservice.IWYHouseServiceConstant;
 
 /**
  * 用户注销
@@ -17,7 +22,9 @@ public class LogoutAction extends ActionSupport
     @Override
     public String execute() throws Exception
     {
-        return super.execute();
+        HttpServletRequest request = ServletActionContext.getRequest();
+        request.getSession().setAttribute(IWYHouseServiceConstant.SESSION_KEY_OF_LOGIN_SUCCESS_USER, null);
+        return SUCCESS;
     }
 
 }

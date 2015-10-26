@@ -9,7 +9,7 @@
         <meta charset="utf-8">
 		<!-- Always force latest IE rendering engine or request Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>首页 - 到家了</title>		
+        <title>首页 - 51HouseService</title>		
 		<!-- Meta Description -->
         <meta name="description" content="致力于解决万千家庭的开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计等各种生活问题，让你足不出户解决烦恼。">
         <meta name="keywords" content="开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计">
@@ -114,7 +114,7 @@
                             <div class="caption-content">
                                 <h2 class="animated fadeInDown">维修师傅马上到家了</h2>
                                 <span class="animated fadeInDown">足不出户就能解决烦恼</span>
-                                <a href="login" class="btn btn-blue btn-effect">加入我们</a>
+                                <a href="login" class="btn btn-blue btn-effect">遇到麻烦了</a>
                             </div>
                         </div>
 						
@@ -127,7 +127,7 @@
                             <div class="caption-content">
                                 <h2>幸福到家了</h2>
                                 <span>生活有你，也有我</span>
-                                <a href="login" class="btn btn-blue btn-effect">加入我们</a>
+                                <a href="login" class="btn btn-blue btn-effect">遇到困难了</a>
                             </div>
                         </div>
 						
@@ -140,7 +140,7 @@
                             <div class="caption-content">
                                 <h2>快乐到家了</h2>
                                 <span>快乐生活，健康品质</span>
-                                <a href="login" class="btn btn-blue btn-effect">加入我们</a>
+                                <a href="login" class="btn btn-blue btn-effect">需要帮助了</a>
                             </div>
                         </div>
 

@@ -5,8 +5,12 @@
 
 <struts>
 
-    <package name="example" namespace="/example" extends="default">
-
+    <package name="usr" namespace="/usr" extends="default">
+    
+    	<action name="index">
+    		<result name="success">/usr/index.jsp</result>
+    	</action>
+    	
         <!-- action name="HelloWorld" class="example.HelloWorld">
             <result>/example/HelloWorld.jsp</result>
         </action>

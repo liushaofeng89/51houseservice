@@ -16,16 +16,16 @@
             <column name="client_ip" unique="false" sql-type="VARCHAR(15)" not-null="false" />  
         </property>  
         <property name="area" type="java.lang.String">  
-            <column name="client_area" length="20" not-null="false" />  
+            <column name="client_area" sql-type="VARCHAR(20)" not-null="false" />  
         </property>  
         <property name="browser" type="java.lang.String">  
-            <column name="client_browser" length="30" not-null="false" />  
+            <column name="client_browser" sql-type="VARCHAR(30)" not-null="false" />  
         </property>  
         <property name="os" type="java.lang.String">  
-            <column name="client_os" length="50" not-null="false" />  
+            <column name="client_os" sql-type="VARCHAR(50)" not-null="false" />  
         </property>  
         <property name="requestURL" type="java.lang.String">  
-            <column name="request_url" length="100" not-null="false" />  
+            <column name="request_url" sql-type="VARCHAR(100)" not-null="false" />  
         </property>  
     </class>  
 </hibernate-mapping> 

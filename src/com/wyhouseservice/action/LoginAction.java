@@ -2,10 +2,16 @@ package com.wyhouseservice.action;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
+
 import com.opensymphony.xwork2.ActionSupport;
+import com.wyhouseservice.IWYHouseServiceConstant;
 import com.wyhouseservice.hbm.WYHouseServiceBaseDAO;
 import com.wyhouseservice.model.IWYHouseServiceBaseModel;
 import com.wyhouseservice.model.UserInfoModel;
+import com.wyhouseservice.util.MD5Util;
 
 /**
  * 用户登录校验
@@ -25,23 +31,54 @@ public class LoginAction extends ActionSupport
     @Override
     public String execute() throws Exception
     {
-        if (checkUserInfo())
+        HttpServletRequest request = ServletActionContext.getRequest();
+        if (checkVerifyCode(request))
         {
-            return SUCCESS;
+            return login(request);
         }
-        return ERROR;
+        return LOGIN;
     }
 
-    private boolean checkUserInfo()
+    private String login(HttpServletRequest request)
     {
+        if (userName == null || pwd == null || userName.trim().isEmpty() || pwd.trim().isEmpty())
+        {
+            request.setAttribute(IWYHouseServiceConstant.SESSION_KEY_OF_LOGIN_ERROR_MSG, "用户名或密码不能为空！");
+            return LOGIN;
+        }
         WYHouseServiceBaseDAO dao = new WYHouseServiceBaseDAO();
-        List<IWYHouseServiceBaseModel> findByProperty = dao.findByProperty("", "", "");
+        List<IWYHouseServiceBaseModel> findByProperty = dao.findByProperty("UserInfoModel", "userName",
+            userName);
         if (findByProperty != null && findByProperty.size() == 1)
         {
             IWYHouseServiceBaseModel baseModel = findByProperty.get(0);
             UserInfoModel model = (UserInfoModel) baseModel;
+            if (model.getPwd().equals(MD5Util.getMD5String(pwd)))
+            {
+                request.getSession().setAttribute(IWYHouseServiceConstant.SESSION_KEY_OF_LOGIN_SUCCESS_USER, model);
+                return SUCCESS;
+            }
         }
-        return false;
+        request.setAttribute(IWYHouseServiceConstant.SESSION_KEY_OF_LOGIN_ERROR_MSG, "用户名或密码错误！");
+        return LOGIN;
+    }
+
+    private boolean checkVerifyCode(HttpServletRequest request)
+    {
+        if (verifyCode == null || verifyCode.isEmpty())
+        {
+            request.setAttribute(IWYHouseServiceConstant.SESSION_KEY_OF_LOGIN_ERROR_MSG, "验证码不能为空！");
+            return false;
+        }
+
+        String attribute = (String) request.getSession().getAttribute(
+            IWYHouseServiceConstant.SESSION_KEY_OF_RAND_CODE);
+        if (!(verifyCode.trim()).equalsIgnoreCase(attribute))
+        {
+            request.setAttribute(IWYHouseServiceConstant.SESSION_KEY_OF_LOGIN_ERROR_MSG, "验证码不正确！");
+            return false;
+        }
+        return true;
     }
 
     public String getUserName()

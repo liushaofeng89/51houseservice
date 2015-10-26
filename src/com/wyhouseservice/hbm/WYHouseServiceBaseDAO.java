@@ -30,10 +30,11 @@ public class WYHouseServiceBaseDAO
 
     /**
      * save a object to db
-     * @param obj the object need to bed saved
+     * @param obj the object need to bed saved, which need to implements from
+     *            IWYHouseServiceBaseModel
      * @return saved success or not
      */
-    public boolean save(Object obj)
+    public boolean save(IWYHouseServiceBaseModel obj)
     {
         Transaction tx = null;
         Session session = getSession();
@@ -42,14 +43,15 @@ public class WYHouseServiceBaseDAO
             tx = session.beginTransaction();
             session.save(obj);
             tx.commit();
-            session.close();
             return true;
         } catch (Exception e)
         {
             Logger.getLogger(this.getClass()).error("Save data failed!");
             tx.rollback();
-            session.close();
             return false;
+        } finally
+        {
+            session.close();
         }
     }
 
@@ -61,15 +63,25 @@ public class WYHouseServiceBaseDAO
      * @return 查询到的数据结果
      */
     @SuppressWarnings("unchecked")
-    public List<IWYHouseServiceBaseModel> findByProperty(String tableName, String proName, String proVal)
+    public List<IWYHouseServiceBaseModel> findByProperty(String tableName, String proName, Object proVal)
     {
         if (WYHouseserviceUtil.isEmpty(tableName) || WYHouseserviceUtil.isEmpty(proName))
         {
             throw new IllegalArgumentException("input parameter is invalid!");
         }
+
         Query createQuery = getSession().createQuery(
-            "FROM " + tableName + " WHERE " + proName + " =: proVal");
-        createQuery.setParameter("proVal", proVal);
+            "FROM " + tableName + " WHERE " + proName + " =:proVal");
+        if (proVal instanceof Integer)
+        {
+            createQuery.setInteger("proVal", Integer.parseInt(String.valueOf(proVal)));
+        } else if (proVal instanceof Boolean)
+        {
+            createQuery.setBoolean("proVal", Boolean.parseBoolean(String.valueOf(proVal)));
+        } else
+        {
+            createQuery.setString("proVal", String.valueOf(proVal));
+        }
         return createQuery.list();
     }
 

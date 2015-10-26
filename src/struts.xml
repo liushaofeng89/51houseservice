@@ -20,7 +20,6 @@
 		</interceptors>
 
 		<default-interceptor-ref name="51houseserviceItcpt"/>
-		<default-action-ref name="index" />
 
 		<global-results>
 			<result name="error">/error.jsp</result>
@@ -44,7 +43,11 @@
 			<result name="success" type="chain">index</result>
 		</action>
 		<action name="checkLogin" class="com.wyhouseservice.action.LoginAction">
-			<result name="success">/user/index.html</result>
+			<result name="success" type="redirectAction">
+                <param name="actionName">index</param>
+                <param name="namespace">/usr</param>
+			</result>
+			<result name="login">/login.jsp</result>
 		</action>
 		
 		<action name="about">
@@ -63,11 +66,8 @@
                 <param name="inputName">inputStream</param>  
             </result> 
 		</action>
-
 	</package>
-
-	<include file="user-operation.xml" />
-
-	<!-- Add packages here -->
-
+	
+	 <include file="user-operation.xml"/>
+	 
 </struts>

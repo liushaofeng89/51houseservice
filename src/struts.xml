@@ -40,7 +40,10 @@
 			</result>
 		</action>
 		<action name="logout" class="com.wyhouseservice.action.LogoutAction">
-			<result name="success" type="chain">index</result>
+			<result name="success" type="redirectAction">
+                <param name="actionName">index</param>
+                <param name="namespace">/</param>
+			</result>
 		</action>
 		<action name="checkLogin" class="com.wyhouseservice.action.LoginAction">
 			<result name="success" type="redirectAction">

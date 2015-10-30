@@ -37,7 +37,11 @@ public final class MD5Util
         {
             throw new RuntimeException(e);
         }
-
+    }
+    
+    public static void main(String[] args)
+    {
+        System.out.println(getMD5String("lwx166646"));
     }
 
     /**

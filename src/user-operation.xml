@@ -6,9 +6,54 @@
 <struts>
 
     <package name="usr" namespace="/usr" extends="default">
-    
+    	
+    	<interceptors>
+            <!-- 定义权限控制拦截器 -->
+            <interceptor name="authority" class="com.wyhouseservice.interceptor.AuthorizationInterceptor" />
+            <!-- 定义一个包含权限控制的拦截器栈 -->
+            <interceptor-stack name="authority-stack">
+                <interceptor-ref name="defaultStack" />
+                <interceptor-ref name="authority" />
+            </interceptor-stack>
+        </interceptors>
+        
+        <!-- 定义默认拦截器 -->
+        <default-interceptor-ref name="authority-stack" />
+    	
     	<action name="index">
     		<result name="success">/usr/index.jsp</result>
+    		<result name="login" type="redirectAction">
+                <param name="actionName">login</param>
+                <param name="namespace">/</param>
+			</result>
+    	</action>
+    	<action name="business">
+    		<result name="success">/usr/business.jsp</result>
+    		<result name="login" type="redirectAction">
+                <param name="actionName">login</param>
+                <param name="namespace">/</param>
+			</result>
+    	</action>
+    	<action name="servers">
+    		<result name="success">/usr/servers.jsp</result>
+    		<result name="login" type="redirectAction">
+                <param name="actionName">login</param>
+                <param name="namespace">/</param>
+			</result>
+    	</action>
+    	<action name="profile">
+    		<result name="success">/usr/profile.jsp</result>
+    		<result name="login" type="redirectAction">
+                <param name="actionName">login</param>
+                <param name="namespace">/</param>
+			</result>
+    	</action>
+    	<action name="share">
+    		<result name="success">/usr/share.jsp</result>
+    		<result name="login" type="redirectAction">
+                <param name="actionName">login</param>
+                <param name="namespace">/</param>
+			</result>
     	</action>
     	
         <!-- action name="HelloWorld" class="example.HelloWorld">

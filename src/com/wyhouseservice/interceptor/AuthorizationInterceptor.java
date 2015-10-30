@@ -1,8 +1,21 @@
 package com.wyhouseservice.interceptor;
 
-import com.opensymphony.xwork2.ActionInvocation;
-import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
+import javax.servlet.http.HttpServletRequest;
 
+import org.apache.struts2.ServletActionContext;
+
+import com.opensymphony.xwork2.ActionInvocation;
+import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
+import com.wyhouseservice.IWYHouseServiceConstant;
+import com.wyhouseservice.model.UserInfoModel;
+
+/**
+ * 用户权限过滤器
+ * @author liushaofeng
+ * @date 2015年10月30日
+ * @version 1.0.0
+ */
 public class AuthorizationInterceptor extends AbstractInterceptor
 {
 
@@ -12,8 +25,14 @@ public class AuthorizationInterceptor extends AbstractInterceptor
     @Override
     public String intercept(ActionInvocation arg0) throws Exception
     {
-        // TODO Auto-generated method stub
-        return null;
+        HttpServletRequest request = ServletActionContext.getRequest();
+        UserInfoModel model = (UserInfoModel) request.getSession().getAttribute(
+            IWYHouseServiceConstant.SESSION_KEY_OF_LOGIN_SUCCESS_USER);
+        if (model == null)
+        {
+            return ActionSupport.LOGIN;
+        }
+        return arg0.invoke();
     }
 
 }

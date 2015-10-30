@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="ico/favicon.ico">
 
-    <title>错误页面 - 51HouseService</title>
+    <title><%=response.getStatus()%> - 51HouseService</title>
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
           <div class="col-sm-12 col-md-6 col-md-offset-3">
             <div class="error-page text-center">
               <div class="not-found">
-				<h1>404</h1>
+				<h1><%=response.getStatus()%></h1>
                 <h3>Oops! Bad request ...</h3>              
               <p>对不起，你所请求的资源不存在...</p>              
               <a href="/51houseservice">首页</a> <span class="divider">|</span> <a href="login">登录</a> <span class="divider">|</span> <a href="#">联系我们</a>

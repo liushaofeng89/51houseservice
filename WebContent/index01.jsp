@@ -260,6 +260,16 @@
 							<p>生产、制作各种铁艺花件、铸、锻件栏杆，围栏、大门、楼梯、家私、招牌等 </p>							
 						</div>
 					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa  fa-gavel fa-3x"></i>
+							</div>
+							
+							<h3>木工</h3>
+							<p>... </p>							
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

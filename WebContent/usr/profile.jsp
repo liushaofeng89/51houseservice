@@ -149,7 +149,7 @@
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-8">
 								<button type="submit" class="btn btn-outline btn-danger">修改信息</button>
-								<button type="submit" class="btn btn-outline btn-primary">密码修改</button>
+								<button type="button" class="btn btn-outline btn-primary">密码修改</button>
 							</div>
 						</div>
 					</form>

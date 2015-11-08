@@ -95,7 +95,7 @@
 						</div>
 				</a></li>
 				<li class="divider"></li>
-				<li><a class="text-center" href="#"> <strong>See All Alerts</strong> <i class="fa fa-angle-right"></i>
+				<li><a class="text-center" href="#"> <strong>查看所有系统消息</strong> <i class="fa fa-angle-right"></i>
 				</a></li>
 			</ul> <!-- /.dropdown-alerts --></li>
 		<!-- /.dropdown -->
@@ -116,7 +116,7 @@
 		<div class="sidebar-nav navbar-collapse">
 			<ul class="nav" id="side-menu">
 				<li><a href="index"><i class="fa fa-dashboard fa-fw"></i> 我的空间</a></li>
-				<li><a href="business"><i class="fa fa-puzzle-piece fa-fw"></i> 我的足迹</a></li>
+				<li><a href="business"><i class="fa fa-puzzle-piece fa-fw"></i> 我的待办</a></li>
 				<li><a href="profile"><i class="fa fa-user fa-fw"></i> 个人中心</a></li>
 				<li><a href="share"><i class="fa fa-share-alt fa-fw"></i> 我要推广</a></li>
 			</ul>

@@ -22,7 +22,7 @@
             <column name="client_browser" sql-type="VARCHAR(30)" not-null="false" />  
         </property>  
         <property name="os" type="java.lang.String">  
-            <column name="client_os" sql-type="VARCHAR(50)" not-null="false" />  
+            <column name="client_os" sql-type="VARCHAR(100)" not-null="false" />  
         </property>  
         <property name="requestURL" type="java.lang.String">  
             <column name="request_url" sql-type="VARCHAR(100)" not-null="false" />  

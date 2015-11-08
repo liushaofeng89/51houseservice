@@ -12,10 +12,12 @@
 
 		<interceptors>
 			<interceptor name="userVisitedInterceptor" class="com.wyhouseservice.interceptor.VisitedUserInfoInterceptor" />
+			<interceptor name="hotlinkInterceptor" class="com.wyhouseservice.interceptor.HotlinkInterceptor" />
 			
 			<interceptor-stack name="51houseserviceItcpt">
 				<interceptor-ref name="defaultStack" />
 				<interceptor-ref name="userVisitedInterceptor"/>
+				<interceptor-ref name="hotlinkInterceptor"/>
 			</interceptor-stack>
 		</interceptors>
 

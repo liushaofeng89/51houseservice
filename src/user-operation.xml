@@ -27,6 +27,13 @@
                 <param name="namespace">/</param>
 			</result>
     	</action>
+    	<action name="allinfo">
+    		<result name="success">/usr/allinfo.jsp</result>
+    		<result name="login" type="redirectAction">
+                <param name="actionName">login</param>
+                <param name="namespace">/</param>
+			</result>
+    	</action>
     	<action name="business">
     		<result name="success">/usr/business.jsp</result>
     		<result name="login" type="redirectAction">

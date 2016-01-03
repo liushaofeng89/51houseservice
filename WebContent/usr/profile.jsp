@@ -149,7 +149,7 @@
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-8">
 								<button type="submit" class="btn btn-outline btn-danger">修改信息</button>
-								<button type="button" class="btn btn-outline btn-primary">密码修改</button>
+								<button type="button" class="btn btn-outline btn-primary" data-toggle="modal" data-target="#modifyPwd">密码修改</button>
 							</div>
 						</div>
 					</form>
@@ -159,21 +159,67 @@
 			<!-- /.row -->
 		</div>
 		<!-- /#page-wrapper -->
-
 	</div>
 	<!-- /#wrapper -->
 
-	<script src="../js/plugins/pace/pace.min.js"></script>
+	<!-- 模态框（Modal） -->
+	<div class="modal fade" id="modifyPwd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="form-horizontal" role="form">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">密码修改框</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="firstname" class="col-sm-2 control-label">原密码</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-2 control-label">新密码</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-2 control-label">重复密码</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="col-sm-2 control-label">验证码</label>
+							<div class="col-sm-3">
+								<input type="text" class="form-control" id="">
+							</div>
+							<div class="col-sm-3">
+								<button type="button" class="btn btn-default">发送校验码</button>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						<button type="submit" class="btn btn-primary">保存更改</button>
+					</div>
+				</form>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal -->
 
-	<!-- Bootstrap Core JavaScript -->
-	<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/plugins/pace/pace.min.js"></script>
 
-	<!-- Metis Menu Plugin JavaScript -->
-	<script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../js/bootstrap.min.js"></script>
 
-	<!-- Custom Theme JavaScript -->
-	<script src="../js/sb-admin-2.js"></script>
+		<!-- Metis Menu Plugin JavaScript -->
+		<script src="../js/plugins/metisMenu/metisMenu.min.js"></script>
 
+		<!-- Custom Theme JavaScript -->
+		<script src="../js/sb-admin-2.js"></script>
 </body>
 
 </html>

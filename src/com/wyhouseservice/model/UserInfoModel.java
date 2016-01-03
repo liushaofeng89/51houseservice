@@ -10,6 +10,17 @@ import java.util.Date;
  */
 public class UserInfoModel implements IWYHouseServiceBaseModel
 {
+    /**超级管理员*/
+    public static final String ADMIN_SUPER="10";
+    /**一般管理员*/
+    public static final String ADMIN_NORMAL="15";
+    
+    /**服务人员*/
+    public static final String WORK_NORMAL="20";
+    
+    /**一般用戶*/
+    public static final String PERSON_NORMAL="30";
+    
     private int id;
     private String userName;
     private String pwd;
@@ -21,6 +32,7 @@ public class UserInfoModel implements IWYHouseServiceBaseModel
     private String weixin;
     private String phoneNum;
     private String homeAddress;
+    private String userRight;
     private Date createTime;
 
     public int getId()
@@ -131,6 +143,16 @@ public class UserInfoModel implements IWYHouseServiceBaseModel
     public void setHomeAddress(String homeAddress)
     {
         this.homeAddress = homeAddress;
+    }
+
+    public String getUserRight()
+    {
+        return userRight;
+    }
+
+    public void setUserRight(String userRight)
+    {
+        this.userRight = userRight;
     }
 
     public Date getCreateTime()

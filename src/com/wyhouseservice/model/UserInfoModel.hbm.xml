@@ -39,6 +39,9 @@
         <property name="homeAddress" type="java.lang.String">  
             <column name="home_address" sql-type="VARCHAR(100)" not-null="false" />  
         </property>  
+        <property name="userRight" type="java.lang.String">  
+            <column name="user_right" sql-type="CHAR(2)" not-null="true" />  
+        </property>  
         <property name="createTime" type="java.util.Date">  
             <column name="create_time" not-null="true" />  
         </property>  

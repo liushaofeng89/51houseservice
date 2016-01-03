@@ -56,7 +56,7 @@ public class VerifyCodeAction extends ActionSupport
         // response.setDateHeader("Expires", 0);
 
         // 生成随机字串
-        String verifyCode = generateVerifyCode(4);
+        String verifyCode = generateVerifyCode(5);
 
         generateCodeImage(verifyCode);
 

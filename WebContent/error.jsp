@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="ico/favicon.ico">
 
-    <title><%=response.getStatus()%> - 51HouseService</title>
+    <title><%=response.getStatus()%> - 屋帮途</title>
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">

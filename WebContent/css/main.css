@@ -715,32 +715,32 @@ ul.external li a:hover {
 }
 
 /*=================================================================
-	Testimonials
+	promises
 ==================================================================*/
 
 
-#testimonials {
-    background-image: url(../img/parallax/testimonial.jpg);
+#promises {
+    background-image: url(../img/parallax/promise.jpg);
     padding: 0;
     color: #fff;
 }
 
-#testimonials .sec-title h2:after {
+#promises .sec-title h2:after {
     border-bottom: 1px solid #fff;
 }
 
-#testimonials .overlay {
+#promises .overlay {
     background-color: rgba(15,155,224, 0.78);
     padding: 70px 0 40px;
 }
 
-.testimonial-item {
+.promise-item {
     margin: 0 auto;
     padding-bottom: 50px;
     width: 64%;
 }
 
-.testimonial-item img {
+.promise-item img {
     border: 3px solid #fff;
     border-radius: 50%;
     display: inline-block;
@@ -748,12 +748,12 @@ ul.external li a:hover {
     max-width: 100px;
 }
 
-.testimonial-item > div {
+.promise-item > div {
     line-height: 30px;
     position: relative;
 }
 
-.testimonial-item > div:before {
+.promise-item > div:before {
     background-image: url("../img/icons/quotes.png");
     background-repeat: no-repeat;
     bottom: 127px;
@@ -763,7 +763,7 @@ ul.external li a:hover {
     width: 45px;
 }
 
-.testimonial-item > div:after {
+.promise-item > div:after {
     background-image: url("../img/icons/quotes.png");
     background-position: -58px 0;
     background-repeat: no-repeat;
@@ -774,25 +774,25 @@ ul.external li a:hover {
     width: 45px;
 }
 
-.testimonial-item > div > span {
+.promise-item > div > span {
     display: inline-block;
     font-weight: 700;
     margin: 40px 0 30px;
     text-transform: uppercase;
 }
 
-#testimonials .owl-controls.clickable {
+#promises .owl-controls.clickable {
     margin-top: 20px;
     text-align: center;
 }
 
-#testimonials .owl-buttons {
+#promises .owl-buttons {
     border: 2px solid #fff;
     float: inherit;
 }
 
-#testimonials .owl-prev:hover,
-#testimonials .owl-next:hover {
+#promises .owl-prev:hover,
+#promises .owl-next:hover {
     color: #fff;
 }
 
@@ -1250,7 +1250,7 @@ footer .form-control {
         bottom: -151px;
     }
 
-    .testimonial-item > div:after {
+    .promise-item > div:after {
         bottom: -40px;
     }
 }
@@ -1289,16 +1289,16 @@ footer .form-control {
         width: 48%;
     }
 
-/* testimonial */
-    .testimonial-item {
+/* promise */
+    .promise-item {
         width: 100%;
     }
 
-    .testimonial-item {
+    .promise-item {
         width: 80%;
     }
 
-    .testimonial-item > div:after {
+    .promise-item > div:after {
         bottom: -35px;
     }
 
@@ -1414,17 +1414,17 @@ footer .form-control {
         font-size: 14px;
     }
 
-/* testimonial */
-    .testimonial-item {
+/* promise */
+    .promise-item {
         width: 95%;
     }
 
-    .testimonial-item > div:before,
-    .testimonial-item > div:after {
+    .promise-item > div:before,
+    .promise-item > div:after {
         background-image: none;
     }
 
-    .testimonial-item > div > span {
+    .promise-item > div > span {
         margin: 30px 0 20px;
     }
 
@@ -1505,12 +1505,12 @@ footer .form-control {
         bottom: -132px;
     }
 
-/* testimonial */
-    .testimonial-item {
+/* promise */
+    .promise-item {
         width: 80%;
     }
 
-    .testimonial-item > div:before {
+    .promise-item > div:before {
         bottom: 160px;
     }
 

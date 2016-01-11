@@ -9,10 +9,10 @@
         <meta charset="utf-8">
 		<!-- Always force latest IE rendering engine or request Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>首页 - 51HouseService</title>		
+        <title>首页 - 屋帮途</title>		
 		<!-- Meta Description -->
-        <meta name="description" content="致力于解决万千家庭的开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计等各种生活问题，让你足不出户解决烦恼。">
-        <meta name="keywords" content="开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计">
+        <meta name="description" content="屋帮途致力于解决万千家庭的开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计等各种生活问题，让你足不出户解决烦恼。">
+        <meta name="keywords" content="屋帮途，开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计">
         <meta name="author" content="刘少锋">
         <!-- Standard Favicon--> 
 		<link rel="shortcut icon" href="img/favicon.ico">
@@ -81,9 +81,10 @@
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="#body">首页</a></li>
                         <li><a href="#service">服务</a></li>
-                        <li><a href="#testimonials">成长</a></li>
+                        <li><a href="#promises">承诺</a></li>
                         <li><a href="#price">费用</a></li>
-                        <li><a href="#contact">反馈</a></li>
+                        <li><a href="#help">帮助</a></li>
+                        <li onclick="window.href='login';return false;"><a href="#">登录</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->
@@ -113,7 +114,7 @@
                             <div class="caption-content">
                                 <h2 class="animated fadeInDown">房屋漏水不用愁</h2>
                                 <span class="animated fadeInDown">足不出户就能解决烦恼</span>
-                                <a href="login" class="btn btn-blue btn-effect">遇到麻烦了</a>
+                                <a href="#" class="btn btn-blue btn-effect">获得帮助</a>
                             </div>
                         </div>
 						
@@ -126,7 +127,7 @@
                             <div class="caption-content">
                                 <h2>管道疏通我来帮</h2>
                                 <span>生活有你，也有我</span>
-                                <a href="login" class="btn btn-blue btn-effect">遇到困难了</a>
+                                <a href="#" class="btn btn-blue btn-effect">获得帮助</a>
                             </div>
                         </div>
 						
@@ -137,9 +138,9 @@
 						<div class="bg-img bg-img-3"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2>木具加工上门帮</h2>
+                                <h2>木具加工正在途中</h2>
                                 <span>快乐生活，健康品质</span>
-                                <a href="login" class="btn btn-blue btn-effect">需要帮助了</a>
+                                <a href="#" class="btn btn-blue btn-effect">获得帮助</a>
                             </div>
                         </div>
 
@@ -276,33 +277,33 @@
 		
 		
 		
-		<!-- Testimonial section -->
-		<section id="testimonials" class="parallax">
+		<!-- Promise section -->
+		<section id="promises" class="parallax">
 			<div class="overlay">
 				<div class="container">
 					<div class="row">
 					
 						<div class="sec-title text-center white wow animated fadeInDown">
-							<h2>What people say</h2>
+							<h2>我们的承诺</h2>
 						</div>
 						
-						<div id="testimonial" class=" wow animated fadeInUp">
-							<div class="testimonial-item text-center">
-								<img src="img/member-1.jpg" alt="Our Clients">
+						<div id="promise" class=" wow animated fadeInUp">
+							<div class="promise-item text-center">
+								<img src="img/member-1.jpg" alt="Our Service">
+								<div class="clearfix">
+									<span>开锁承诺</span>
+									<p>经工商局注册、公安局备案，提供正规合法的上门开锁服务。</p>
+								</div>
+							</div>
+							<div class="promise-item text-center">
+								<img src="img/member-1.jpg" alt="Our Service">
 								<div class="clearfix">
 									<span>Katty Flower</span>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 								</div>
 							</div>
-							<div class="testimonial-item text-center">
-								<img src="img/member-1.jpg" alt="Our Clients">
-								<div class="clearfix">
-									<span>Katty Flower</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-								</div>
-							</div>
-							<div class="testimonial-item text-center">
-								<img src="img/member-1.jpg" alt="Our Clients">
+							<div class="promise-item text-center">
+								<img src="img/member-1.jpg" alt="Our Service">
 								<div class="clearfix">
 									<span>Katty Flower</span>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -314,7 +315,7 @@
 				</div>
 			</div>
 		</section>
-		<!-- end Testimonial section -->
+		<!-- end Promise section -->
 		
 		<!-- Price section -->
 		<section id="price">
@@ -393,7 +394,7 @@
 					
 						<div class="sec-title text-center white wow animated fadeInDown">
 							<h2>关注我们</h2>
-							<p>我们将会通过以下一些渠道发布一些最新讯息</p>
+							<p>如果你觉得本站不错，请记得关注微信公众号、分享给你的小伙伴</p>
 						</div>
 						
 						<ul class="social-button">
@@ -409,15 +410,14 @@
 		<!-- end Social section -->
 		
 		<!-- Contact section -->
-		<section id="contact" >
+		<section id="help" >
 			<div class="container">
 				<div class="row">
 					
 					<div class="sec-title text-center wow animated fadeInDown">
-						<h2>意见反馈</h2>
-						<p>您的意见对我们非常宝贵</p>
+						<h2>需求帮助</h2>
+						<p>请录入你的需求信息，我们会尽快上门为你服务</p>
 					</div>
-					
 					
 					<div class="col-md-12 contact-form wow animated fadeInLeft">
 						<form action="#" method="post">
@@ -430,7 +430,7 @@
 							<div class="input-field">
 								<textarea name="message" class="form-control" placeholder="您的意见/建议"></textarea>
 							</div>
-					       	<button type="submit" id="submit" class="btn btn-blue btn-effect">提交</button>
+					       	<button type="submit" id="submit" class="btn btn-blue btn-effect disabled">提交</button>
 						</form>
 					</div>
 		

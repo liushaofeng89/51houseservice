@@ -4,8 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <title>关于我们 - 屋帮途</title>
-<meta name="description" content="屋帮途致力于解决万千家庭的开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计等各种生活问题，让你足不出户解决烦恼。">
 <meta name="keywords" content="屋帮途，开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计">
+<meta name="description" content="屋帮途致力于解决万千家庭的开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计等各种生活问题，让你足不出户解决烦恼。">
 <meta name="author" content="刘少锋">
 <!-- Standard Favicon--> 
 <link rel="shortcut icon" href="img/favicon.ico">
@@ -46,6 +46,7 @@
                         <li><a href="/#promises">成长</a></li>
                         <li><a href="/#price">费用</a></li>
                         <li><a href="/#help">帮助</a></li>
+                        <li onclick="javascript:window.location.href='login'"><a href="#">登录</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->

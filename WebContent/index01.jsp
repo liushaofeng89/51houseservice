@@ -9,7 +9,7 @@
         <meta charset="utf-8">
 		<!-- Always force latest IE rendering engine or request Chrome Frame -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>首页 - 屋帮途</title>		
+        <title>居家生活问题的好帮手 - 屋帮途</title>		
 		<!-- Meta Description -->
         <meta name="description" content="屋帮途致力于解决万千家庭的开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计等各种生活问题，让你足不出户解决烦恼。">
         <meta name="keywords" content="屋帮途，开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计">
@@ -71,7 +71,7 @@
 					
 					<!-- logo -->
 					<h1 class="navbar-brand">
-						<a href="/51houseservice"><img alt="" src="img/logo_white.png"></a>
+						<a href="index"><img alt="屋帮途" src="img/logo_white.png"></a>
 					</h1>
 					<!-- /logo -->
                 </div>
@@ -84,7 +84,7 @@
                         <li><a href="#promises">承诺</a></li>
                         <li><a href="#price">费用</a></li>
                         <li><a href="#help">帮助</a></li>
-                        <li onclick="window.href='login';return false;"><a href="#">登录</a></li>
+                        <li onclick="javascript:window.location.href='login'"><a href="#">登录</a></li>
                     </ul>
                 </nav>
 				<!-- /main nav -->
@@ -114,23 +114,21 @@
                             <div class="caption-content">
                                 <h2 class="animated fadeInDown">房屋漏水不用愁</h2>
                                 <span class="animated fadeInDown">足不出户就能解决烦恼</span>
-                                <a href="#" class="btn btn-blue btn-effect">获得帮助</a>
+                                <a href="#help" class="btn btn-blue btn-effect">获得帮助</a>
                             </div>
                         </div>
 						
 					</div>
 					
 					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-					
 						<div class="bg-img bg-img-1"></div>
 						<div class="slide-caption">
                             <div class="caption-content">
                                 <h2>管道疏通我来帮</h2>
                                 <span>生活有你，也有我</span>
-                                <a href="#" class="btn btn-blue btn-effect">获得帮助</a>
+                                <a href="#help" class="btn btn-blue btn-effect">获得帮助</a>
                             </div>
                         </div>
-						
 					</div>
 					
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
@@ -140,7 +138,7 @@
                             <div class="caption-content">
                                 <h2>木具加工正在途中</h2>
                                 <span>快乐生活，健康品质</span>
-                                <a href="#" class="btn btn-blue btn-effect">获得帮助</a>
+                                <a href="#help" class="btn btn-blue btn-effect">获得帮助</a>
                             </div>
                         </div>
 
@@ -289,21 +287,21 @@
 						
 						<div id="promise" class=" wow animated fadeInUp">
 							<div class="promise-item text-center">
-								<img src="img/member-1.jpg" alt="Our Service">
+								<img src="img/logo_black_name.png" alt="Our Service">
 								<div class="clearfix">
 									<span>开锁承诺</span>
 									<p>经工商局注册、公安局备案，提供正规合法的上门开锁服务。</p>
 								</div>
 							</div>
 							<div class="promise-item text-center">
-								<img src="img/member-1.jpg" alt="Our Service">
+								<img src="img/logo_black_name.png" alt="Our Service">
 								<div class="clearfix">
 									<span>Katty Flower</span>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 								</div>
 							</div>
 							<div class="promise-item text-center">
-								<img src="img/member-1.jpg" alt="Our Service">
+								<img src="img/logo_black_name.png" alt="Our Service">
 								<div class="clearfix">
 									<span>Katty Flower</span>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -475,7 +473,7 @@
           	<h4>团队成员</h4>
             <div class="gallery clearfix">
               <ul class="list-unstyled">
-                <li><a href="#"><img src="img/member-1.jpg" style="width:60px;height:60px;" alt="..."></a></li>
+                <li><a href="#"><img src="img/logo_black_name.png" style="width:60px;height:60px;" alt="team member"></a></li>
                </ul>
             </div>
 
@@ -484,7 +482,7 @@
           <!-- Newsletter -->
           <div class="col-xs-12 col-sm-3 col-md-3">
             <h4>微信公众号</h4>
-            <p><img id="weixin-code" alt="" src="img/weixin_code.jpg"> </p>
+            <p><img id="weixin-code" alt="weixin code" src="img/weixin_code.jpg"> </p>
 			<br />
 			<h4>关注我们</h4>
 			  <ul class="list-inline">

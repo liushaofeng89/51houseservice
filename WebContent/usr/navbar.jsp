@@ -3,7 +3,15 @@
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 	<div class="navbar-header">
-		<a class="navbar-brand" href="index"><s:property value="#session.WYHouseServiceSessionLoginSuccessUser.nickName" />的工作台</a>
+		<!-- responsive nav button -->
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<!-- /responsive nav button -->
+		<a href="index"><img src="../img/logo_backgoround_title.png"/></a>
 	</div>
 	<!-- /.navbar-header -->
 

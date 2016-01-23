@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>http://51houseservice.com</loc>
+<priority>1.00</priority>
+<lastmod>2016-01-12T21:58:36+08:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://51houseservice.com/</loc>
+<priority>1.00</priority>
+<lastmod>2016-01-12T21:58:40+08:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://51houseservice.com/51houseservice</loc>
+<priority>0.80</priority>
+<lastmod>2016-01-12T21:58:43+08:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://51houseservice.com/about</loc>
+<priority>0.80</priority>
+<lastmod>2016-01-12T21:58:37+08:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://51houseservice.com/declare</loc>
+<priority>0.80</priority>
+<lastmod>2016-01-12T21:58:37+08:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://51houseservice.com/index</loc>
+<priority>0.80</priority>
+<lastmod>2016-01-12T21:58:37+08:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+<url>
+<loc>http://51houseservice.com/join</loc>
+<priority>0.80</priority>
+<lastmod>2016-01-12T21:58:37+08:00</lastmod>
+<changefreq>Always</changefreq>
+</url>
+</urlset>

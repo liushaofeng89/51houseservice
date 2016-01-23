@@ -12,8 +12,11 @@
         <title>居家生活问题的好帮手 - 屋帮途</title>		
 		<!-- Meta Description -->
         <meta name="description" content="屋帮途致力于解决万千家庭的开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计等各种生活问题，让你足不出户解决烦恼。">
-        <meta name="keywords" content="屋帮途，开锁，管道疏通，房屋漏水，打孔，家电维修，电器回收，铁艺安装与设计">
+        <meta name="keywords" content="开锁，管道疏通，房屋漏水，打孔，家电维修，铁艺安装与设计">
         <meta name="author" content="刘少锋">
+        <meta property="og:type" content="image"/>
+  		<meta property="og:image" content="http://51houseservice.com/img/slider/wubangtu01.jpg"/>
+  		
         <!-- Standard Favicon--> 
 		<link rel="shortcut icon" href="img/favicon.ico">
 		
@@ -182,6 +185,9 @@
 						<p class="wow animated bounceInRight">您有更好的服务都可以提供给我们</p>
 					</div>
 					
+				</div>
+				
+				<div class="row">
 					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
 						<div class="service-item">
 							<div class="service-icon">
@@ -222,53 +228,53 @@
 							<p>液压钻孔、专业打孔、墙体打孔、开门开窗、钻孔开洞、打孔开门洞 </p>							
 						</div>
 					</div>
-					
 				</div>
 				
 				<div class="row">
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-desktop fa-3x"></i>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="1.2s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-desktop fa-3x"></i>
+								</div>
+								
+								<h3>家电维修</h3>
+								<p>空调、彩电（液晶/等离子）、冰箱、冰柜、冰库、微波炉、洗衣机、热水器等 </p>							
 							</div>
-							
-							<h3>家电维修</h3>
-							<p>空调（安装/维修/拆移机/加氟/清洗/保养）、各种制冷设备、彩电（液晶/等离子）、冰箱、冰柜、冰库、微波炉、洗衣机、热水器等 </p>							
+						</div>
+						
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="1.5s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-trash fa-3x"></i>
+								</div>
+								
+								<h3>废品回收</h3>
+								<p>各种家电、家具、地毯、柜台、数码设备等 </p>							
+							</div>
+						</div>
+						
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="1.8s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-building fa-3x"></i>
+								</div>
+								
+								<h3>铁艺设计与安装</h3>
+								<p>生产、制作各种铁艺花件、铸、锻件栏杆，围栏、大门、楼梯、家私、招牌等 </p>							
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="2.1s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa  fa-gavel fa-3x"></i>
+								</div>
+								
+								<h3>木工</h3>
+								<p>敬请期待... </p>							
+							</div>
 						</div>
 					</div>
-					
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-trash fa-3x"></i>
-							</div>
-							
-							<h3>废品回收</h3>
-							<p>各种家电、家具、地毯、柜台、数码设备等 </p>							
-						</div>
-					</div>
-					
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa fa-building fa-3x"></i>
-							</div>
-							
-							<h3>铁艺设计与安装</h3>
-							<p>生产、制作各种铁艺花件、铸、锻件栏杆，围栏、大门、楼梯、家私、招牌等 </p>							
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
-						<div class="service-item">
-							<div class="service-icon">
-								<i class="fa  fa-gavel fa-3x"></i>
-							</div>
-							
-							<h3>木工</h3>
-							<p>... </p>							
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</section>
 		<!-- end Service section -->
@@ -280,11 +286,12 @@
 			<div class="overlay">
 				<div class="container">
 					<div class="row">
-					
 						<div class="sec-title text-center white wow animated fadeInDown">
 							<h2>我们的承诺</h2>
 						</div>
-						
+					</div>
+				
+					<div class="row">
 						<div id="promise" class=" wow animated fadeInUp">
 							<div class="promise-item text-center">
 								<img src="img/logo_black_name.png" alt="Our Service">
@@ -308,7 +315,6 @@
 								</div>
 							</div>
 						</div>
-					
 					</div>
 				</div>
 			</div>
@@ -322,12 +328,12 @@
 				
 					<div class="sec-title text-center wow animated fadeInDown">
 						<h2>服务费用</h2>
-						<p>Our price for your company</p>
+						<p>屋帮途从不收取任何中介费用，服务所产生的费用有服务商与客户之间完成</p>
 					</div>
 					
 					<div class="col-md-4 wow animated fadeInUp">
-						<div class="price-table text-center">
-							<span>Silver</span>
+						<div class="price-table featured text-center">
+							<span>开锁</span>
 							<div class="value">
 								<span>$</span>
 								<span>24,35</span><br>
@@ -338,14 +344,14 @@
 								<li>No Bonus Points</li>
 								<li>No Bonus Points</li>
 								<li>No Bonus Points</li>
-								<li><a href="#">sign up</a></li>
+								<li><a href="#">请求服务</a></li>
 							</ul>
 						</div>
 					</div>
 					
 					<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.4s">
 						<div class="price-table featured text-center">
-							<span>Gold</span>
+							<span>房屋漏水</span>
 							<div class="value">
 								<span>$</span>
 								<span>50,00</span><br>
@@ -356,14 +362,14 @@
 								<li>Free Trial</li>
 								<li>Free Trial</li>
 								<li>Free Trial</li>
-								<li><a href="#">sign up</a></li>
+								<li><a href="#">请求服务</a></li>
 							</ul>
 						</div>
 					</div>
 					
 					<div class="col-md-4 wow animated fadeInUp" data-wow-delay="0.8s">
-						<div class="price-table text-center">
-							<span>Diamond</span>
+						<div class="price-table featured text-center">
+							<span>管道疏通</span>
 							<div class="value">
 								<span>$</span>
 								<span>123,12</span><br>
@@ -374,7 +380,7 @@
 								<li>All Bonus Points</li>
 								<li>All Bonus Points</li>
 								<li>All Bonus Points</li>
-								<li><a href="#">sign up</a></li>
+								<li><a href="#">请求服务</a></li>
 							</ul>
 						</div>
 					</div>
@@ -463,17 +469,18 @@
           <div class="col-xs-12 col-sm-3 col-md-3">            
             <h4>友情链接</h4>
             <p>
-              <a href="http://www.liushaofeng.cn" target="_blank">小小梦想 </a><br />
-              <a href="http://www.bailupiaoliu.com" target="_blank">白鹿河QQ漂流  </a><br />
+              <a href="http://www.liushaofeng.cn" target="_blank">小小梦想</a><br />
+              <a href="http://www.bailupiaoliu.com" target="_blank">白鹿河QQ漂流 </a><br />
+              <a href="http://www.fwxjj.com" target="_blank">厦门家具</a><br />
             </p>
           </div><!-- / .Useful Links -->
 		  
           <!-- Recent Tweets -->
           <div class="col-xs-12 col-sm-3 col-md-3">
-          	<h4>团队成员</h4>
+          	<h4>安全保障</h4>
             <div class="gallery clearfix">
               <ul class="list-unstyled">
-                <li><a href="#"><img src="img/logo_black_name.png" style="width:60px;height:60px;" alt="team member"></a></li>
+                <li><a href="http://webscan.360.cn/index/checkwebsite/url/51houseservice.com"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/2a86040749a5b3c2565868bd3be991f4"></a></li>
                </ul>
             </div>
 
@@ -505,7 +512,7 @@
         	<div class="col-xs-12 col-sm-12 col-md-12">
         		<div class="copyright">
 		        	<div class="pull-left">
-		        		<p>版权所有 &copy; 2015 51HOUSESERVICE.COM。 保留一切权力。 <a href="http://www.miitbeian.gov.cn/">蜀ICP备14026954号-3</a> </p>
+		        		<p>版权所有 &copy; 2015-2016 51HOUSESERVICE.COM。 保留一切权力。 <a href="http://www.miitbeian.gov.cn/">蜀ICP备14026954号-3</a> </p>
 		        	</div>
 		        	<div class="pull-right">
 		        		<p>

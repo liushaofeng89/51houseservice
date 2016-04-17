@@ -1,7 +1,3 @@
-/* =================================== */
-/*	Basic Style 
-/* =================================== */
-
 body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -476,7 +472,7 @@ h1.navbar-brand {
 /* Project laughtbox setup */
 
 .fancybox-item.fancybox-close {
-    background: url("../img/icons/close.png") no-repeat scroll 0 0 transparent;
+    background: url("http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/close.png") no-repeat scroll 0 0 transparent;
     height: 50px;
     right: 0;
     top: 0;
@@ -484,14 +480,14 @@ h1.navbar-brand {
 }
 
 .fancybox-next span {
-    background: url("../img/right.png") no-repeat scroll center center #009ee3;
+    background: url("http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/right.png") no-repeat scroll center center #009ee3;
     height: 50px;
     width: 50px;
     right: 0;
 }
 
 .fancybox-prev span {
-    background: url("../img/left.png") no-repeat scroll center center #009ee3;
+    background: url("http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/left.png") no-repeat scroll center center #009ee3;
     height: 50px;
     width: 50px;
     left: 0;
@@ -716,7 +712,7 @@ ul.external li a:hover {
 
 
 #promises {
-    background-image: url(../img/parallax/promise.jpg);
+    background-image: url(http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/promise.jpg);
     padding: 0;
     color: #fff;
 }
@@ -750,7 +746,7 @@ ul.external li a:hover {
 }
 
 .promise-item > div:before {
-    background-image: url("../img/icons/quotes.png");
+    background-image: url("http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/quotes.png");
     background-repeat: no-repeat;
     bottom: 127px;
     height: 33px;
@@ -760,7 +756,7 @@ ul.external li a:hover {
 }
 
 .promise-item > div:after {
-    background-image: url("../img/icons/quotes.png");
+    background-image: url("http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/quotes.png");
     background-position: -58px 0;
     background-repeat: no-repeat;
     bottom: -50px;
@@ -886,7 +882,7 @@ ul.external li a:hover {
 ==================================================================*/
 
 #social {
-    background-image: url(../img/slider/banner.jpg);
+    background-image: url(http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/wubangtu03.jpg);
     padding: 0;
 }
 
@@ -1514,3 +1510,15 @@ select{
   padding: .3125rem;
   z-index: 0;
 }
+
+.input-field select{
+	padding:10px;
+	border: 1px solid #ececec;
+}
+
+.input-field select:FOCUS{
+	border-color:#66afe9
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+

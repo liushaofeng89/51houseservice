@@ -15,7 +15,7 @@
         <meta name="keywords" content="开锁，管道疏通，房屋漏水，打孔，家电维修，铁艺安装与设计">
         <meta name="author" content="刘少锋">
         <meta property="og:type" content="image"/>
-  		<meta property="og:image" content="http://51houseservice.com/img/slider/wubangtu01.jpg"/>
+  		<meta property="og:image" content="http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/wubangtu01.jpg"/>
   		
         <!-- Standard Favicon--> 
 		<link rel="shortcut icon" href="img/favicon.ico">
@@ -72,7 +72,7 @@
 					
 					<!-- logo -->
 					<h1 class="navbar-brand">
-						<a href="index"><img alt="屋帮途" src="img/logo_white.png"></a>
+						<a href="index"><img alt="屋帮途" src="http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/logo_white.png"></a>
 					</h1>
 					<!-- /logo -->
                 </div>
@@ -387,7 +387,7 @@
 						
 						<ul class="social-button">
 							<li class="wow animated zoomIn"><a href="#" onclick="shareToQzone(event)"><i class="fa fa-qq fa-2x"></i></a></li>
-							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a class="fancybox" title="请关注我们的微信公众号" data-fancybox-group="works" href="img/weixin_code_1280.jpg"><i class="fa fa-weixin fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a class="fancybox" title="请关注我们的微信公众号" data-fancybox-group="works" href="http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/weixin_code_1280.jpg"><i class="fa fa-weixin fa-2x"></i></a></li>
 							<li class="wow animated zoomIn" data-wow-delay="0.6s" onclick="shareToSinaWB(event)"><a href="#"><i class="fa fa-weibo fa-2x"></i></a></li>							
 						</ul>
 						
@@ -426,7 +426,13 @@
 								<input type="email" name="email" class="form-control" placeholder="联系邮箱">
 							</div>
 							<div class="input-field">
-								
+								<div class="row" id="location">
+									<div class="col-md-2">
+										<select>
+											<option>中国</option>
+										</select>
+									</div>
+								</div>
 							</div>
 					       	<button type="submit" id="submit" class="btn btn-blue btn-effect disabled">提交</button>
 						</form>
@@ -481,7 +487,7 @@
           <!-- Newsletter -->
           <div class="col-xs-12 col-sm-3 col-md-3">
             <h4>微信公众号</h4>
-            <p><img id="weixin-code" alt="weixin code" src="img/weixin_code.jpg"> </p>
+            <p><img id="weixin-code" alt="weixin code" src="http://51houseservice.oss-cn-hangzhou.aliyuncs.com/site/weixin_code.jpg"> </p>
 			<br />
 			<h4>关注我们</h4>
 			  <ul class="list-inline">

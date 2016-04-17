@@ -73,6 +73,13 @@
 		</action>
 	</package>
 	
+	<package name="json" extends="json-default" >
+		<action name="querycity" class="cn.ysh.studio.struts2.json.demo.action.UserAction" method="querycity">
+			<result type="json"></result>
+		</action>
+	</package>
+	
+	
 	 <include file="user-operation.xml"/>
 	 
 </struts>

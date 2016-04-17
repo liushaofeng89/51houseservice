@@ -26,20 +26,18 @@
 		<!-- CSS
 		================================================== -->
 		
-		<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-		
 		<!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css">
 		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" href="http://apps.bdimg.com/libs/fancybox/2.1.5/jquery.fancybox.css">
 		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
 		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="http://apps.bdimg.com/libs/owl-carousel/1.32/owl.carousel.css">
 		<!-- bootstrap.min -->
         <link rel="stylesheet" href="css/slit-slider.css">
 		<!-- bootstrap.min -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="http://apps.bdimg.com/libs/animate.css/3.1.0/animate.min.css">
 		<!-- Main Stylesheet -->
         <link rel="stylesheet" href="css/main.css">
 
@@ -65,7 +63,7 @@
                 <div class="navbar-header">
                     <!-- responsive nav button -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
+						<span class="sr-only">屋帮途</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -107,7 +105,7 @@
 		<section id="home-slider">
             <div id="slider" class="sl-slider-wrapper">
 
-				<div class="sl-slider">
+				<div id="owl-example" class="sl-slider">
 				
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 
@@ -178,13 +176,9 @@
 		<!-- Service section -->
 		<section id="service">
 			<div class="container">
-				<div class="row">
-				
-					<div class="sec-title text-center">
-						<h2 class="wow animated bounceInLeft">我们的服务</h2>
-						<p class="wow animated bounceInRight">您有更好的服务都可以提供给我们</p>
-					</div>
-					
+				<div class="sec-title text-center">
+					<h2 class="wow animated bounceInUp">我们的服务</h2>
+					<p class="wow animated bounceInDown">您有更好的服务都可以提供给我们</p>
 				</div>
 				
 				<div class="row">
@@ -274,7 +268,6 @@
 							</div>
 						</div>
 					</div>
-				
 			</div>
 		</section>
 		<!-- end Service section -->
@@ -292,26 +285,26 @@
 					</div>
 				
 					<div class="row">
-						<div id="promise" class=" wow animated fadeInUp">
+						<div id="promise" class="wow animated fadeInUp">
 							<div class="promise-item text-center">
-								<img src="img/logo_black_name.png" alt="Our Service">
+								<img src="img/logo_black_name.png" alt="开锁服务">
 								<div class="clearfix">
 									<span>开锁承诺</span>
 									<p>经工商局注册、公安局备案，提供正规合法的上门开锁服务。</p>
 								</div>
 							</div>
 							<div class="promise-item text-center">
-								<img src="img/logo_black_name.png" alt="Our Service">
+								<img src="img/logo_black_name.png" alt="管道疏通服务">
 								<div class="clearfix">
-									<span>Katty Flower</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+									<span>管道疏通承诺</span>
+									<p>管道未疏通，不收取任何费用</p>
 								</div>
 							</div>
 							<div class="promise-item text-center">
-								<img src="img/logo_black_name.png" alt="Our Service">
+								<img src="img/logo_black_name.png" alt="房屋漏水服务">
 								<div class="clearfix">
-									<span>Katty Flower</span>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+									<span>房屋漏水承诺</span>
+									<p>处理后，房屋继续漏水，退还所有费用</p>
 								</div>
 							</div>
 						</div>
@@ -327,7 +320,7 @@
 				<div class="row">
 				
 					<div class="sec-title text-center wow animated fadeInDown">
-						<h2>服务费用</h2>
+						<h2>服务费用(最新)</h2>
 						<p>屋帮途从不收取任何中介费用，服务所产生的费用有服务商与客户之间完成</p>
 					</div>
 					
@@ -335,15 +328,12 @@
 						<div class="price-table featured text-center">
 							<span>开锁</span>
 							<div class="value">
-								<span>$</span>
-								<span>24,35</span><br>
-								<span>month</span>
+								<span>￥</span>
+								<span>50</span><br>
+								<span>元/次 （平均）</span>
 							</div>
 							<ul>
-								<li>No Bonus Points</li>
-								<li>No Bonus Points</li>
-								<li>No Bonus Points</li>
-								<li>No Bonus Points</li>
+								<li>未查询到最新数据</li>
 								<li><a href="#">请求服务</a></li>
 							</ul>
 						</div>
@@ -353,15 +343,12 @@
 						<div class="price-table featured text-center">
 							<span>房屋漏水</span>
 							<div class="value">
-								<span>$</span>
-								<span>50,00</span><br>
-								<span>month</span>
+								<span>￥</span>
+								<span>**,**</span><br>
+								<span>元/次 （平均）</span>
 							</div>
 							<ul>
-								<li>Free Trial</li>
-								<li>Free Trial</li>
-								<li>Free Trial</li>
-								<li>Free Trial</li>
+								<li>未查询到最新数据</li>
 								<li><a href="#">请求服务</a></li>
 							</ul>
 						</div>
@@ -371,15 +358,12 @@
 						<div class="price-table featured text-center">
 							<span>管道疏通</span>
 							<div class="value">
-								<span>$</span>
-								<span>123,12</span><br>
-								<span>month</span>
+								<span>￥</span>
+								<span>**,**</span><br>
+								<span>元/次 （平均）</span>
 							</div>
 							<ul>
-								<li>All Bonus Points</li>
-								<li>All Bonus Points</li>
-								<li>All Bonus Points</li>
-								<li>All Bonus Points</li>
+								<li>未查询到最新数据</li>
 								<li><a href="#">请求服务</a></li>
 							</ul>
 						</div>
@@ -425,14 +409,24 @@
 					
 					<div class="col-md-12 contact-form wow animated fadeInLeft">
 						<form action="#" method="post">
+							<div class="input-field input-control select">
+								<select name="serviceType" class="form-control">
+									<option>开锁</option>
+									<option>管道疏通</option>
+									<option>房屋漏水</option>
+								</select>
+							</div>
 							<div class="input-field">
 								<input type="text" name="name" class="form-control" placeholder="您的称呼">
+							</div>
+							<div class="input-field">
+								<input type="email" name="phone" class="form-control" placeholder="手机">
 							</div>
 							<div class="input-field">
 								<input type="email" name="email" class="form-control" placeholder="联系邮箱">
 							</div>
 							<div class="input-field">
-								<textarea name="message" class="form-control" placeholder="您的意见/建议"></textarea>
+								
 							</div>
 					       	<button type="submit" id="submit" class="btn btn-blue btn-effect disabled">提交</button>
 						</form>
@@ -471,7 +465,6 @@
             <p>
               <a href="http://www.liushaofeng.cn" target="_blank">小小梦想</a><br />
               <a href="http://www.bailupiaoliu.com" target="_blank">白鹿河QQ漂流 </a><br />
-              <a href="http://www.fwxjj.com" target="_blank">厦门家具</a><br />
             </p>
           </div><!-- / .Useful Links -->
 		  
@@ -483,7 +476,6 @@
                 <li><a href="http://webscan.360.cn/index/checkwebsite/url/51houseservice.com"><img border="0" src="http://img.webscan.360.cn/status/pai/hash/2a86040749a5b3c2565868bd3be991f4"></a></li>
                </ul>
             </div>
-
           </div><!-- / .Recent Tweets -->
 		  
           <!-- Newsletter -->
@@ -531,24 +523,23 @@
 		<!-- Essential jQuery Plugins
 		================================================== -->
 		<!-- Main jQuery -->
-        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 		<!-- Twitter Bootstrap -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<!-- Single Page Nav -->
         <script src="js/jquery.singlePageNav.min.js"></script>
 		<!-- jquery.fancybox.pack -->
-        <script src="js/jquery.fancybox.pack.js"></script>
-		<!-- Google Map API -->
+        <script src="http://apps.bdimg.com/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
 		
 		<!-- Owl Carousel -->
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="http://apps.bdimg.com/libs/owl-carousel/1.32/owl.carousel.js"></script>
         <!-- jquery easing -->
         <script src="js/jquery.easing.min.js"></script>
         <!-- Fullscreen slider -->
         <script src="js/jquery.slitslider.js"></script>
         <script src="js/jquery.ba-cond.min.js"></script>
 		<!-- onscroll animation -->
-        <script src="js/wow.min.js"></script>
+        <script src="http://apps.bdimg.com/libs/wow/0.1.6/wow.min.js"></script>
 		<!-- Custom Functions -->
         <script src="js/main.js"></script>
         <script src="js/share.js"></script>
